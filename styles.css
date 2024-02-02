@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'butter pineapple';
+  src: URL(./fonts/butter-pineapple.regular.otf);
+}
+body {
+  background-image: url("./img/lettuce.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* backdrop-filter: blur(5px); */
+ 
+}
+
+.container{
+  width: 1400px;
+  margin: auto;
+}
+nav{
+    background-color: #4E7047;
+    /* background-color: #4E7047; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: white;
+    
+}
+
+h2 {
+  font-family: 'butter pineapple', sans-serif;
+  font-size:xx-large;
+}
+ul {
+  list-style-type: none;
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;;
+}
+li {
+  float: left;
+  padding: 15px;
+  font-size: 20px;
+}
+.logo{
+  font-size: 50px;
+  
+}
+
+img {
+  width: 500px;
+  height: auto;
+}
+.booking-title{
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-weight:600;
+}
+form{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.heading{
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-weight:600;
+  
+}
+
+.card{
+  margin: 10px;
+  
+}
+
+.order{
+  color: red;
+  
+}
+
+.btn-primary, .btn-primary:visited {
+  background-color:#4E7047 !important;
+  color: white !important;
+  border: 0 !important;
+
+  
+}
+.card-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.card-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.card-container{
+  display: flex;
+  justify-content: center;
+  
+}
+.banner{
+  /* width: 1000px; */
+  display: flex;
+  justify-content: center;
+}
+.card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  }
+.banner-img{
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.imgmenu{
+  width: 420px;
+  height: 300px;
+  border-radius: 28px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  margin: 0 auto;
+
+}
+.socialicon{
+  width: 30px;
+  height: auto;
+}
+.bn-content{
+  text-align: center;
+  padding-top: 70px;
+}
+
+footer {
+  padding-left: 70px;
+  padding-top: 10px;
+  background-color: #4E7047;
+  color: white;
+  font-family: 'EB Garamond', serif;
+  font-weight:400;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 15px;
+  float: left;
+  
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between icons */
+}
+.submit-booking{
+  margin: 20px 0 20px 40%;
+}
+
+.booking-title{
+  margin-top: 20px;
+  color: light-grey;
+  font-size: 40px;
+}
+
+.booking-img{
+  margin-top: 10%;
+}
+
+.about-title{
+  padding-left: 20px;
+}
+
+.about-text{
+  padding-left: 20px;
+}
+
+.ctmenu{
+  border-bottom: 1px solid red;
+}
+.line-4 hr {
+  height: 2px;
+  border: 0;
+  background: #638889;
+  width: 730px;
+  position: absolute;
+	left: 25%;
+}
