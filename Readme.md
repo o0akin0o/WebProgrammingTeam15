@@ -1,6 +1,6 @@
 # Exercise 5: Readme.md
 
-# Project Name - Team Number
+# Eeastern Kitchen Restaurant - Team 15
 
 A brief description of web development project for Eastern Kitchen Restaurant.
 
