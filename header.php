@@ -7,16 +7,13 @@
                             <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex1.php">Ex1</a>
+                            <a class="nav-link" href="menu.php">Menu</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex2.php">Ex2</a>
+                            <a class="nav-link" href="booking.php">Booking</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex3.php">Ex3</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="ex4.php">Ex4</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                     </ul>
                 </div>
