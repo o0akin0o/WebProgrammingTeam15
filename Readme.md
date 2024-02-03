@@ -2,7 +2,7 @@
 
 # Eastern Kitchen Restaurant - Team 15
 
-A brief description of web development project for Eastern Kitchen Restaurant.
+Our website, Eastern Kitchen Restaurant, offers both online ordering and table reservations for customers.
 
 ## Table of Contents
 - [Features](#features)
