@@ -17,28 +17,7 @@
         <div class="container mx-auto my-4">
 
             <!-- NAV BAR -->
-            <nav class="navbar row">
-                <h2 class="col-md-4 logo">Eastern Kitchen</h2>
-                <div class="col-md-8">
-
-                    <ul>
-                        <li>
-                            <a class="nav-link" href="index.html">Home</a>
-                            
-                        </li>
-                        <li>
-                            <a class="nav-link" href="menu.html">Menu</a>
-                            
-                        </li>
-                        <li>
-                            <a class="nav-link" href="booking.html">Booking</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <?php include ('header.php'); ?>
 
             <!-- END OF NAV BAR -->
 
@@ -101,42 +80,7 @@
 
             </div> <!-- END OF CONTAINER -->
            
-            
-            <footer>
-                <div class="row my-4 mt-4">
-                <div class="col-md-4">
-                    <ul class="social-icons">
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank" title="Visit our Facebook page">
-                                <img class="socialicon" src="./img/fbicon.png" alt="Facebook Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.youtube.com/" target="_blank" title="Visit our youtube chanel">
-                                <img class="socialicon" src="./img/youtubeicon.png" alt="Youtube Icon">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank" title="Visit our instagram page">
-                                <img class="socialicon" src="./img/Instagram_icon.png" alt="Instagram Icon">
-                            </a>
-                        </li>
-                        <!-- Add more social icons as needed -->
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p>Opening Hours</p>
-                    <span>Sunday-Friday</span>
-                    <p>9AM - 9PM</p>
-
-                </div>
-                <div class="col-md-4">
-                    <p>Address:</p>
-                    <span>123 Lesmurine, 13100</span>
-                    <p>Phone: 514-123-4567</p>
-                </div>
-            </div>
-            </footer>
+            <?php include ('footer.php'); ?>
 
         </div><!-- END OF CONTAINER -->
 
