@@ -14,7 +14,7 @@
         <!-- END OF NAV BAR -->
 
         <div class="container">
-            <h1 class="my-4">Shopping Cart</h1>
+            <h1 class="my-4">Order Review</h1>
 
             <?php
             // Assume the customer has added 3 pizzas, each priced at 15 euros, 1 cocktail priced at 10 euros, and 1 salad priced at 5 euros
