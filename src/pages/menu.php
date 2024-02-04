@@ -10,7 +10,17 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,600&family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <title>Restaurant</title>
+        <script>
+        function updateCart() {
+    console.log("Dishes added");
+
+   
+}
+        
+        </script>
+      
     </head>
     <body>
 
@@ -19,8 +29,8 @@
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
             <!-- END OF NAV BAR -->
-
-            
+            <?php include ('cartheader.php'); ?>
+    
             <div class="container">
                 
                 <div class="row my-4 mt-4">
@@ -42,8 +52,8 @@
                                 This deconstructed Caesar-inspired salad showcases lightly grilled romaine lettuce heads, ripe tomatoes, creamy avocado slices, diced onions, and a generous handful of crunchy croutons, all topped with a sprinkle of "cheesy" vegan parmesan and a scattering of nuts.</p>
                             <p class="">15$</p>
                             <div class="card-body">
-                                <a href="#" class="btn btn-primary">Order Now</a>
-                            </div>
+                            <button href="#" class="btn btn-primary" onclick="updateCart()">Order Now</button>
+            </div>
                         </div>
                         <div class="col-sm-1 col-md-1"></div>
                     </div>
