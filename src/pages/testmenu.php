@@ -19,7 +19,7 @@
 
             <?php
             // Include your database connection code
-            include('db_connection.php'); // Replace with your actual database connection code
+            include('db_connection.php'); 
 
             // Fetch menu items from the database
             $sql = "SELECT * FROM menu_table";
