@@ -13,8 +13,7 @@
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
             <!-- END OF NAV BAR -->
-            <?php include ('cartheader.php'); ?>
-            
+          
             <div class="container">
                 
                 <div class="row my-4 mt-4">

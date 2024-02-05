@@ -13,8 +13,7 @@
         <!-- NAV BAR -->
         <?php include('header.php'); ?>
         <!-- END OF NAV BAR -->
-        <?php include('cartheader.php'); ?>
-
+       
         <div class="container">
 
             <?php
@@ -30,6 +29,7 @@
                 echo '<div class="row">';
                 // Left side: Menu List
                 echo '<div class="col-md-6">';
+                echo '<h2 class="mt-5">Order</h2>';
                 echo '<ul class="list-group bg-transparent" id="menuList">';
                 while ($row = $result->fetch_assoc()) {
                     // Display each menu item dynamically
