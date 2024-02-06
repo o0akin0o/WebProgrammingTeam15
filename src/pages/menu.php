@@ -1,3 +1,14 @@
+<?php
+// check user login by cookie
+$loggedIn = isset($_COOKIE["name"]);
+
+// Thiết lập biến link tùy thuộc vào trạng thái đăng nhập của người dùng
+if($loggedIn) {
+    $link = 'menu.php'; // if login then load menu page again
+} else {
+    $link = 'login.php'; // if not login then redirect to login page
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,7 +51,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -54,7 +65,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -95,7 +106,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -109,7 +120,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -150,7 +161,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -164,7 +175,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                echo '<a href="#" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
