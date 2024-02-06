@@ -20,7 +20,8 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 2 (Dan Le): Order.
 - [ ] Feature 3 (Quan Le):Log In/ Log Out.
 - [ ] Feature 4 (Phuong Le):Admin management.
-
+- [ ] Feature 5 (Quan Le): Menu Page
+- [ ] Feature 6 (Quan Le): Create Account, Customers Page
 
 ### Feature 1
 
@@ -36,7 +37,7 @@ Feature for customers to place orders online.
 
 ### Feature 3
 
-Features for customers to create account and track their orders/booking/profile. 
+Features for customers to Login,Logout your Account. 
 - Links github:
 - Link to the feature (shell.hamk.fi):
 
@@ -45,8 +46,16 @@ Features for customers to create account and track their orders/booking/profile.
 Features for admin to see restaurant’s income, orders, numbers of users. 
 - Links github:
 - Link to the feature (shell.hamk.fi):
+### Feature 5
 
+Features for load products from database. 
+- Links github:
+- Link to the feature (shell.hamk.fi):
+### Feature 6
 
+Features for customers to create account and track their orders/booking/profile. 
+- Links github:
+- Link to the feature (shell.hamk.fi):
 
 ## Database Tables
 
