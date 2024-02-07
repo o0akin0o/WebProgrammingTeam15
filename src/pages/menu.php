@@ -26,12 +26,17 @@ if($loggedIn) {
     <body>
             <div class="container mx-auto my-4">
             <?php include 'header.php'; ?>
-            <!-- SORTING PRICE -->
+            <!-- SEARCH & SORT FOOD BY PRICE -->
             <div class="container">
             
             <div class="row mt-2">
-            <div class="col-sm-10"></div>
-            <div id="filter-box" class="col-sm-2">
+            <div class="col-sm-3 col-md-3">
+                <form action="#" method="post" class="row">
+                <input type="text" class="form-control" placeholder="Search food" />
+                </form>
+            </div>
+            <div class="col-sm-7 col-md-7"></div>
+            <div id="filter-box" class="col-sm-2 col-md-2">
             <select 
                 id="sort-box" 
                 class="form-select" 
@@ -45,7 +50,7 @@ if($loggedIn) {
             </div>
             </div>
             </div>
-            <!-- END SORTING PRICE -->
+            <!-- END SEARCH & SORTING PRICE -->
             <div class="container">
                 
                 <div class="row my-4 mt-4">
@@ -108,6 +113,53 @@ if($loggedIn) {
                     } else {
                         echo 'No menu items available.';
                     }
+                } else {
+                    if ($result->num_rows > 0) {
+                        $count = 1;
+                        while ($row = $result->fetch_assoc()) {
+                         // Display each menu item dynamically
+                            if ($count % 2 == 1) {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                                } else {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                                }
+                        $count++;
+                    }
+                } else {
+                    echo 'No menu items available.';
+                }
+                
+                
                 }
                     
                     // close connection
@@ -173,6 +225,53 @@ if($loggedIn) {
                     } else {
                         echo 'No menu items available.';
                     }
+                } else {
+                
+                    if ($result->num_rows > 0) {
+                        $count = 1;
+                        while ($row = $result->fetch_assoc()) {
+                            // Display each menu item dynamically
+                            if ($count % 2 == 1) {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            } else {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            }
+                            $count++;
+                        }
+                    } else {
+                        echo 'No menu items available.';
+                    }
+                
                 }
                     // close connection
                     $conn->close();
@@ -237,6 +336,52 @@ if($loggedIn) {
                     } else {
                         echo 'No menu items available.';
                     }
+                } else {
+                    if ($result->num_rows > 0) {
+                        $count = 1;
+                        while ($row = $result->fetch_assoc()) {
+                            // Display each menu item dynamically
+                            if ($count % 2 == 1) {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            } else {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            }
+                            $count++;
+                        }
+                    } else {
+                        echo 'No menu items available.';
+                    }
+                
                 }
                     // close connection
                     $conn->close();
