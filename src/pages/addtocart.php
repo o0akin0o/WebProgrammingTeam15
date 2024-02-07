@@ -25,27 +25,7 @@ if($loggedIn) {
     </head>
     <body>
             <div class="container mx-auto my-4">
-            <?php include 'header.php'; ?>
-            <!-- SORTING PRICE -->
-            <div class="container">
-            
-            <div class="row mt-2">
-            <div class="col-sm-10"></div>
-            <div id="filter-box" class="col-sm-2">
-            <select 
-                id="sort-box" 
-                class="form-select" 
-                aria-label="Default select example"
-                onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
-            >
-              <option selected>Price Sorting</option>
-              <option value="?field=price&sort=asc">Ascending</option>
-              <option value="?field=price&sort=desc">Descending</option>
-            </select>
-            </div>
-            </div>
-            </div>
-            <!-- END SORTING PRICE -->
+            <?php include 'header.php'; ?>       
             <div class="container">
                 
                 <div class="row my-4 mt-4">
@@ -53,69 +33,58 @@ if($loggedIn) {
                 </div>
                 
                 <?php
-             
-                    // SALADS
                     include 'db_connection.php';
                     $sql = "SELECT img_path, name, description, price FROM Products where category='Salads'";
                     $result = $conn->query($sql);
-                    $orderField = isset($_GET['field']) ? $_GET['field'] : "";
-                    $orderSort = isset($_GET['sort']) ? $_GET['sort'] : "";
-                    if(!empty($orderField) && !empty($orderSort)){
-                        $orderCondition = "ORDER BY `Products`.`".$orderField."` ".$orderSort."";
-                        $sqlSort = "SELECT img_path, name, description, price FROM Products where category='Salads' $orderCondition";
-                        $result = $conn->query($sqlSort);
-                        if ($result->num_rows > 0) {
-                            $count = 1;
-                            while ($row = $result->fetch_assoc()) {
-                             // Display each menu item dynamically
-                                if ($count % 2 == 1) {
-                                    echo '<div class="row my-4 mt-4">';
-                                    echo '<div class="col-sm-1 col-md-1"></div>';
-                                    echo '<div class="col-sm-5 col-md-5">';
-                                    echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
-                                    echo '</div>';
-                                    echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                    echo '<p class="">' . $row['name'] . '</p>';
-                                    echo '<p class="">' . $row['description'] . '</p>';
-                                    echo '<p class="">' . $row['price'] . '$</p>';
-                                    echo '<div class="card-body">';
-                                    echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '<div class="col-sm-1 col-md-1"></div>';
-                                    echo '</div>';
-                                    echo '<br>';
-                                    } else {
-                                    echo '<div class="row my-4 mt-4">';
-                                    echo '<div class="col-sm-1 col-md-1"></div>';
-                                    echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                    echo '<p class="">' . $row['name'] . '</p>';
-                                    echo '<p class="">' . $row['description'] . '</p>';
-                                    echo '<p class="">' . $row['price'] . '$</p>';
-                                    echo '<div class="card-body">';
-                                    echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
-                                    echo '</div>';
-                                    echo '</div>';
-                                    echo '<div class="col-sm-5 col-md-5">';
-                                    echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
-                                    echo '</div>';
-                                    echo '<div class="col-sm-1 col-md-1"></div>';
-                                    echo '</div>';
-                                    echo '<br>';
-                                    }
+                    if ($result->num_rows > 0) {
+                        $count = 1;
+                        while ($row = $result->fetch_assoc()) {
+                            // Display each menu item dynamically
+                            if ($count % 2 == 1) {
+                                
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            } else {
+                                echo '<div class="row my-4 mt-4">';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '<div class="col-sm-5 col-md-5 bn-content">';
+                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<p class="">' . $row['description'] . '</p>';
+                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<div class="card-body">';
+                                echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '<div class="col-sm-5 col-md-5">';
+                                echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
+                                echo '</div>';
+                                echo '<div class="col-sm-1 col-md-1"></div>';
+                                echo '</div>';
+                                echo '<br>';
+                            }
                             $count++;
                         }
                     } else {
                         echo 'No menu items available.';
                     }
-                }
                     
                     // close connection
                     $conn->close();
                 ?>
-                <!-- END OF SALADS -->
-                
-                <!-- MAIN DISHES -->
             <div class="row my-4 mt-4">
                 <h1 class="heading">Main Dishes</h1>
             </div>
@@ -123,12 +92,6 @@ if($loggedIn) {
                     include 'db_connection.php';
                     $sql = "SELECT img_path, name, description, price FROM Products where category='Main Dishes'";
                     $result = $conn->query($sql);
-                    $orderField = isset($_GET['field']) ? $_GET['field'] : "";
-                    $orderSort = isset($_GET['sort']) ? $_GET['sort'] : "";
-                    if(!empty($orderField) && !empty($orderSort)){
-                        $orderCondition = "ORDER BY `Products`.`".$orderField."` ".$orderSort."";
-                        $sqlSort = "SELECT img_path, name, description, price FROM Products where category='Main Dishes' $orderCondition";
-                        $result = $conn->query($sqlSort);
                     if ($result->num_rows > 0) {
                         $count = 1;
                         while ($row = $result->fetch_assoc()) {
@@ -173,26 +136,17 @@ if($loggedIn) {
                     } else {
                         echo 'No menu items available.';
                     }
-                }
+                    
                     // close connection
                     $conn->close();
                 ?>
                 <div class="row my-4 mt-4">
                     <h1 class="heading">Sweets</h1>
                 </div>
-                <!-- END OF MAIN DISHES -->
-                
-                <!-- SWEETS -->
                 <?php
                     include 'db_connection.php';
                     $sql = "SELECT img_path, name, description, price FROM Products where category='Sweets'";
                     $result = $conn->query($sql);
-                    $orderField = isset($_GET['field']) ? $_GET['field'] : "";
-                    $orderSort = isset($_GET['sort']) ? $_GET['sort'] : "";
-                    if(!empty($orderField) && !empty($orderSort)){
-                        $orderCondition = "ORDER BY `Products`.`".$orderField."` ".$orderSort."";
-                        $sqlSort = "SELECT img_path, name, description, price FROM Products where category='Sweets' $orderCondition";
-                        $result = $conn->query($sqlSort);
                     if ($result->num_rows > 0) {
                         $count = 1;
                         while ($row = $result->fetch_assoc()) {
@@ -237,7 +191,7 @@ if($loggedIn) {
                     } else {
                         echo 'No menu items available.';
                     }
-                }
+                    
                     // close connection
                     $conn->close();
                 ?>
