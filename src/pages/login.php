@@ -1,5 +1,4 @@
 <?php
-
 include 'db_connection.php';
 // Kiểm tra nếu người dùng đã gửi form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -15,7 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($passwddb==$password) {
         // Nếu đăng nhập thành công, thiết lập cookie và chuyển hướng đến trang chính
         setcookie("name", $name, time() + (86400 * 30), "/"); // Cookie có hiệu lực trong 30 ngày
-        header("Location: index.php");
+        $prevPage = $_COOKIE['prev_page'];
+        header("Location: $prevPage");
         exit;
     } else {
         // Nếu đăng nhập không thành công, hiển thị thông báo lỗi
@@ -54,7 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <?php include 'header.php'; ?>
-
+<div class="container">
+                
+                <div class="row my-4 mt-4">
 <div class="booking">
     <div class="row">
         <div class="col-md-4"></div>
@@ -99,6 +101,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="col-md-4"></div>
     </div>
 </div>
+                            </div>
+                            </div>
 <?php include 'footer.php'; ?>
 </body>
 </html>
