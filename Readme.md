@@ -75,7 +75,7 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 3: (Created By Dan Le): Form Name: Checkout Page [gitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+- Form 3: (Created By Dan Le): Form Name: Checkout Page [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
  | [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php).  | Validations Applied
 - Form 4: (Created By Phuong Le):  Form Name: Admin Page and Update Order: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
