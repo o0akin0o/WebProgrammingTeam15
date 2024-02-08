@@ -19,6 +19,19 @@
                        
                        <!-- CART -->
                        <div class="container">
+                       <?php 
+                      if(isset($_GET['action'])){
+                        var_dump($_POST); exit;
+                      
+                      }
+                       
+                       
+                       
+                       
+                       
+                       
+                       
+                       ?>
                        <!-- FORM -->
                        <form id="cart-form" action="cart.php?action=submit" method="POST">
                        <div class="form-group row">
@@ -47,13 +60,13 @@
                   <td>
                   
  
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
 
                   
                   </td>
                   <td>Mark</td>
-                  <td> <input type="submit" class="form-control btn btn-outline-success" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Update"></td>
-                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete"></td>
+                  <td> </td>
+                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
                 </tr>
                 
                 <th scope="row"></th>
@@ -65,13 +78,11 @@
                 </tr>
               </tbody>
             </table>
-            
-              
-                      <p class="lead">
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Complete</a>
-                      </p>
-                    </div>
-                       </div>
+            <div class="submit-booking">
+                
+                <input type="submit" class="btn btn-primary submit" name="update_click" value="Update"></input></div>
+            </div>
+          </div>
         </form>
         
         <!-- END CART -->
@@ -85,7 +96,7 @@
   <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
   <hr class="my-4">
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  
+   
 </div>
         </div>
       
@@ -102,7 +113,7 @@
                   </div>
                   <div class="form-group">
                     <label for="" class="p-2">Address</label>
-                    <input type="text" id="" class="form-control" placeholder="1">
+                    <input type="text" id="" class="form-control" placeholder="123 Lesmurine">
                   </div>
                   <div class="form-group">
                     <label for="" class="p-2">Note</label>
@@ -111,7 +122,7 @@
                  
                 <div class="submit-booking">
                 
-                  <button type="submit" class="btn btn-primary submit">Complete Order</button></div>
+                  <input type="submit" class="btn btn-primary submit" name="order_click"></input></div>
                 </fieldset>
               </form>
             </div>
