@@ -24,13 +24,7 @@
                         var_dump($_POST); exit;
                       
                       }
-                       
-                       
-                       
-                       
-                       
-                       
-                       
+            
                        ?>
                        <!-- FORM -->
                        <form id="cart-form" action="cart.php?action=submit" method="POST">
@@ -46,7 +40,7 @@
                   <th scope="" class="col-sm-2">Price</th>
                   <th scope="" class="col-sm-1">Quantity</th>
                   <th scope="" class="col-sm-3">Total</th>
-                  <th scope="" class="col-sm-1">Update</th>
+                
                   <th scope="" class="col-sm-1">Delete</th>
                 </tr>
               </thead>
@@ -55,25 +49,45 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
+                  <td>Spinach, Tuna, and Egg Salad</td>
+                  <td>15.00$</td>
                   <td>
-                  
- 
                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
-
-                  
                   </td>
-                  <td>Mark</td>
-                  <td> </td>
+                  <td>15.00€</td>
+                 
                   <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
                 </tr>
                 
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Teriyaki Salmon</td>
+                  <td>19.25€</td>
+                  <td>
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
+                  </td>
+                  <td>19.25€</td>
+                  
+                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lemon Herb Chicken</td>
+                  <td>17.50€</td>
+                  <td>
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
+                  </td>
+                  <td>19.25€</td>
+                  
+                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
+                </tr>
+              
                 <th scope="row"></th>
                   <td><strong>Total</strong></td>
                   <td></td>
                   <td></td>
-                  <td><strong>$$$</strong></td>
+                  <td><strong>51.75€</strong></td>
                   <td></td>
                 </tr>
               </tbody>
@@ -92,10 +106,14 @@
         
         <div class="col-md-6">
         <div class="jumbotron">
-  <h1 class="display-4">Order Details</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4">Order Review</h1>
+  <p class="lead">Spinach, Tuna, and Egg Salad (1)</p>
+  <p class="lead">Lemon Herb Chicken (1)</p>
+  <p class="lead">Teriyaki Salmon (1)</p>
+  <p class="lead">Shipping: 5€</p>
+  <p class="lead">Tax: 5%</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <h3>Total: 51.75€</h3>
    
 </div>
         </div>
