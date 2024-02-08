@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <?php include('links.php'); ?>
     <title>Create Account</title>
     <style>
         .row {

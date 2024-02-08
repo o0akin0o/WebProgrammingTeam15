@@ -26,6 +26,7 @@ if($loggedIn) {
     <body>
             <div class="container mx-auto my-4">
             <?php include 'header.php'; ?>
+            <?php include ('login_nav.php'); ?>
             <!-- SEARCH & SORT FOOD BY PRICE -->
             <div class="container">
             
