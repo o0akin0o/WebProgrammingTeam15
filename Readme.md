@@ -43,7 +43,7 @@ Features for customers to Login,Logout your Account.
 
 ### Feature 4
 
-Features for admin to see restaurant’s income, orders, numbers of users. 
+Features for admin to make reports for the restaurant: income, numbers of customer/ Update and change status of Order.
 - Links github:
 - Link to the feature (shell.hamk.fi):
 ### Feature 5
@@ -61,13 +61,13 @@ Features for customers to create account and track their orders/booking/profile.
 
 List the database tables that are part of your project. 
 
-- Table 1 (Created By Sonali Mitua): Table Name 
-- Table 2 (Created By Quan Le): Table Name 
-- Table 3 (Created By Dan Le): Table Name 
-- Table 4 (Created By Phuong Le): Table Name 
+- Table 1 (Created By Sonali Mitua): Booking
+- Table 2 (Created By Quan Le): Customers, Products
+- Table 3 (Created By Dan Le): Order, Order_detail
 > Include the ER Diagram of the database. 
 
----
+![table](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/90eebd1b-2e85-4ee3-a660-1c3ababb2f83)
+
 
 ## Created Forms
 
@@ -76,7 +76,7 @@ List and describe any forms that have been created as part of your project. Incl
 - Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 - Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-
+- Form 4: (Created By Phuong Le):  Form Name: Admin Page and Update Order: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
 ---
 
