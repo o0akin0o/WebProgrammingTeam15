@@ -1,0 +1,41 @@
+
+
+footer {
+    background-color: #436944;
+    color: #fff; 
+    padding: 40px 0; 
+}
+
+.row {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.col-md-4 {
+    flex: 0 0 32%; 
+}
+
+.social-icons {
+    list-style: none; 
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+.social-icon img {
+    width: 30px; 
+    height: auto; 
+}
+
+p {
+    margin: 0; 
+}
+
+span {
+    display: block; 
+    margin-bottom: 10px; 
+}
