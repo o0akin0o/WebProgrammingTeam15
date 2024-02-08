@@ -1,3 +1,6 @@
+<?php $prevPage = $_SERVER['REQUEST_URI'];
+setcookie("prev_page", $prevPage, time() + 3600, "/");
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,7 +17,7 @@
             <?php include ('header.php'); ?>
 
             <!-- END OF NAV BAR -->
-
+            <?php include ('login_nav.php'); ?>
             
             <div class="container">
                 
