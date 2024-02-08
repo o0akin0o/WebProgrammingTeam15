@@ -56,6 +56,11 @@ img {
   font-family: 'EB Garamond', serif;
   font-weight:600;
 }
+.login-title{
+  text-align: center;
+  font-family: 'EB Garamond', serif;
+  font-weight:600;
+}
 form{
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -155,7 +160,9 @@ footer {
 .submit-booking{
   margin: 20px 0 20px 40%;
 }
-
+.loginbtn{
+  margin: 20px 0 20px 45%;
+}
 .booking-title{
   margin-top: 20px;
   color: light-grey;
