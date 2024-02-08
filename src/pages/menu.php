@@ -12,20 +12,31 @@ if($loggedIn) {
 <?php $prevPage = $_SERVER['REQUEST_URI'];
 setcookie("prev_page", $prevPage, time() + 3600, "/");
 ?>
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
         <?php include ('links.php'); ?>
+=======
+        <?php include 'links.php'; ?>
+>>>>>>> Stashed changes
         <title>Restaurant</title>
     </head>
     <body>
             <div class="container mx-auto my-4">
             <?php include 'header.php'; ?>
+<<<<<<< Updated upstream
             <?php include ('login_nav.php'); ?>
+=======
+            <?php include 'login_nav.php'; ?>
+>>>>>>> Stashed changes
             <!-- SEARCH & SORT FOOD BY PRICE -->
             
                        </div>
@@ -56,7 +67,11 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
             </div>
             <!-- END SEARCH & SORTING PRICE -->
             <div class="container">
+<<<<<<< Updated upstream
             <form action="" method="post" class="">
+=======
+            
+>>>>>>> Stashed changes
                 <div class="row my-4 mt-4">
                     <h1 class="heading">Salads</h1>
                 </div>
@@ -93,6 +108,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                     echo '<p class="">' . $row['description'] . '</p>';
                                     echo '<p class="">' . $row['price'] . '$</p>';
                                     echo '<div class="card-body">';
+<<<<<<< Updated upstream
                                     // echo '<button type="submit" name="add-to-cart" class="btn btn-success"><i class="fa-solid fa-cart-plus p-1"></i>Order Now</button>';
                                 
                                     echo '<input type="hidden" name="product_id" value="' . $row['id'] . '">';
@@ -101,6 +117,9 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
 
 
+=======
+                                    echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
+>>>>>>> Stashed changes
                                     echo '</div>';
                                     echo '</div>';
                                     echo '<div class="col-sm-1 col-md-1"></div>';
@@ -556,7 +575,10 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                     $conn->close();
                 ?>
             </div> <!-- END OF CONTAINER -->
+<<<<<<< Updated upstream
             </form>
+=======
+>>>>>>> Stashed changes
         </div><!-- END OF CONTAINER -->
         
         <script
