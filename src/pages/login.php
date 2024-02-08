@@ -14,7 +14,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($passwddb==$password) {
         // Nếu đăng nhập thành công, thiết lập cookie và chuyển hướng đến trang chính
         setcookie("name", $name, time() + (86400 * 30), "/"); // Cookie có hiệu lực trong 30 ngày
-        header("Location: index.html");
+        $prevPage = $_COOKIE['prev_page'];
+        header("Location: $prevPage");
         exit;
     } else {
         // Nếu đăng nhập không thành công, hiển thị thông báo lỗi
