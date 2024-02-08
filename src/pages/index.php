@@ -18,7 +18,7 @@
 
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
-
+            <?php include ('login_nav.php'); ?>
             <!-- END OF NAV BAR -->
 
             
