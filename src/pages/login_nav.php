@@ -1,4 +1,6 @@
-<?php include('links.php'); ?>
+<?php 
+
+include('links.php'); ?>
 <div class="container">
 <div class="container mx-auto my-4">
         <a id="login" class="p-3"  href="login.php"><i class="fa sign-in">Login</i></a>

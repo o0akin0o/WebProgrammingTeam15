@@ -1,4 +1,5 @@
 <?php
+
 include 'db_connection.php';
 // Kiểm tra nếu người dùng đã gửi form
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -28,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+    <?php include('links.php'); ?>
     <title>Create Account</title>
     <style>
         .row {
@@ -52,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <?php include 'header.php'; ?>
+
 <div class="booking">
     <div class="row">
         <div class="col-md-4"></div>
