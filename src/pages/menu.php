@@ -569,9 +569,3 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     </body>
 </html>
 
-
-
-<form id="add-to-cart-form" action="cart.php?action=add" method="POST">
-    <input type="hidden" value="1" name="quantity[<?= $row['id'] ?>]" /><br/>
-    <input type="submit" value="Order" />
-</form>
