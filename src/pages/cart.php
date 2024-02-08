@@ -10,21 +10,18 @@
                 <body>
                         <div class="container mx-auto my-4">
                          <?php include 'header.php'; ?>
-                       
-                       
-                       
-                       
-                       
+   
                         <!-- MY CART -->
                         
                         <div class="container mx-auto my-4">
-                        <a id="cart" class="link-success"  href="mycart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+                        <a id="cart" class="link-success"  href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
                        </div>
                        
                        <!-- CART -->
                        <div class="container">
-                       <form>
-    <div class="form-group row">
+                       <!-- FORM -->
+                       <form id="cart-form" action="cart.php?action=submit" method="POST">
+                       <div class="form-group row">
                        <div class="jumbotron row mx-auto my-4">
                       <h1 class="display-4">My Cart</h1>
                       <hr class="my-4">
@@ -58,20 +55,12 @@
                   <td> <input type="submit" class="form-control btn btn-outline-success" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Update"></td>
                   <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete"></td>
                 </tr>
-                <tr>
-                <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                </tr>
-                <tr>
+                
                 <th scope="row"></th>
-                  <td>Total</td>
+                  <td><strong>Total</strong></td>
                   <td></td>
                   <td></td>
-                  <td>$$$</td>
+                  <td><strong>$$$</strong></td>
                   <td></td>
                 </tr>
               </tbody>
@@ -84,6 +73,60 @@
                     </div>
                        </div>
         </form>
+        
+        <!-- END CART -->
+        <hr class="my-4">
+        <!-- CUSTOMER DETAIL FORM -->
+        <div class="row">
+        
+        <div class="col-md-6">
+        <div class="jumbotron">
+  <h1 class="display-4">Order Details</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  
+</div>
+        </div>
+      
+        <div class="col-md-6">
+        <form id="cart-form" action="cart.php?action=submit" >
+                <fieldset>
+                  <div class="form-group">
+                    <label for="" class="p-2">Name</label>
+                    <input type="text" id="" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="p-2">Phone</label>
+                    <input type="text" id="" class="form-control" placeholder="Phone">
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="p-2">Address</label>
+                    <input type="text" id="" class="form-control" placeholder="1">
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="p-2">Note</label>
+                    <input type="text" id="" class="form-control" placeholder="Some notes">
+                  </div>
+                 
+                <div class="submit-booking">
+                
+                  <button type="submit" class="btn btn-primary submit">Complete Order</button></div>
+                </fieldset>
+              </form>
+            </div>
+            
+            <div class="col-md-1"></div>
+            </div>
+        
+        
+       <!-- END OF CUSTOMER DETAIL FORM  -->
+        
+        
+        
+        
+        
+        
                     </div> 
                        
                        
