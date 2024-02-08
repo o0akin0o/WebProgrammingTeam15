@@ -1,3 +1,4 @@
+
 <?php
 // check user login by cookie
 $loggedIn = isset($_COOKIE["name"]);
@@ -9,9 +10,7 @@ if($loggedIn) {
     $link = 'login.php'; // if not login then redirect to login page
 }
 ?>
-<?php $prevPage = $_SERVER['REQUEST_URI'];
-setcookie("prev_page", $prevPage, time() + 3600, "/");
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -68,7 +67,20 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                     <h1 class="heading">Salads</h1>
                 </div>
                 <!-- FORM -->
-                <form action="menu.php?act=addcart" method="post">
+                <form id="cart-form" action="cart.php?action=add" method="POST">
+                <?php 
+                
+                if(isset($_GET['action'])){
+                    switch ($_GET['action']) {
+                        case "add":
+                            echo 'Added';
+                            break;
+                    
+                    }
+                  
+                  }
+                
+                ?>
                 <?php
              
                     // SALADS
@@ -98,7 +110,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                     echo '<p class="">' . $row['description'] . '</p>';
                                     echo '<p class="">' . $row['price'] . '$</p>';
                                     echo '<div class="card-body">';
-                                    echo '<input type="submit" value="Order Now" class="btn btn-primary" name="addtocart">';
+                                    echo '<input type="submit" value="Order Now" class="btn btn-primary" name="add">';
                                     echo '</div>';
                                     echo '</div>';
                                     echo '<div class="col-sm-1 col-md-1"></div>';

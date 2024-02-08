@@ -6,3 +6,7 @@
     </div>
 </div>
 
+
+<?php $prevPage = $_SERVER['REQUEST_URI']; 
+setcookie("prev_page", $prevPage, time() + 3600, "/");
+?>
