@@ -67,13 +67,9 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
             </div>
             <!-- END SEARCH & SORTING PRICE -->
             <div class="container">
-<<<<<<< Updated upstream
             <form action="" method="post" class="">
-=======
-            
->>>>>>> Stashed changes
                 <div class="row my-4 mt-4">
-                    <h1 class="heading">Salads</h1>
+                    <h1 class="heading">Salads testete</h1>
                 </div>
                 
                 <?php
@@ -108,7 +104,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                     echo '<p class="">' . $row['description'] . '</p>';
                                     echo '<p class="">' . $row['price'] . '$</p>';
                                     echo '<div class="card-body">';
-<<<<<<< Updated upstream
                                     // echo '<button type="submit" name="add-to-cart" class="btn btn-success"><i class="fa-solid fa-cart-plus p-1"></i>Order Now</button>';
                                 
                                     echo '<input type="hidden" name="product_id" value="' . $row['id'] . '">';
@@ -117,9 +112,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
 
 
-=======
-                                    echo '<a href="' . $link . '" class="btn btn-primary">Order Now</a>';
->>>>>>> Stashed changes
                                     echo '</div>';
                                     echo '</div>';
                                     echo '<div class="col-sm-1 col-md-1"></div>';
