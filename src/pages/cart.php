@@ -27,7 +27,8 @@
             
                        ?>
                        <!-- FORM -->
-                       <form id="cart-form" action="cart.php?action=submit" method="POST">
+                      <form action='' method='post' >
+                      
                        
                        <div class="form-group row">
                        <div class="jumbotron row mx-auto my-4">
@@ -54,6 +55,7 @@
                   <td>15.00$</td>
                   <td>
                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[1]">
+                  
                   </td>
                   <td>15.00€</td>
                  
@@ -117,6 +119,7 @@
   <p class="lead">Tax: 5%</p>
   <hr class="my-4">
   <h3>Total: 51.75€</h3>
+   
    
 </div>
         </div>
