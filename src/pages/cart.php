@@ -14,22 +14,17 @@ if (!isset($_SESSION['cart'])) {
 if (isset($_GET['action'])) {
     switch ($_GET['action']) {
         case "add":
-            // Check if the 'qty' array is set in the form submission
-            if (isset($_POST['qty'])) {
-                // Iterate over the submitted quantities and add them to the cart
-                foreach ($_POST['qty'] as $id => $qty) {
-                    // Make sure $id is sanitized to prevent SQL injection
-                    $id = mysqli_real_escape_string($conn, $id);
-                    // Add the item to the cart with its quantity
-                    $_SESSION['cart'][$id] = $qty;
-                }
+          foreach ($_POST['qty'] as $id => $qty) {
+            $id = mysqli_real_escape_string($conn, $id);
+            $_SESSION['cart'][$id] = $qty;
             }
-            // Output the contents of the cart
-            var_dump($_SESSION['cart']);
-            exit;
             break;
-    }
-}
+        }
+      }   
+      if(!empty($_SESSION['cart'])){
+        $products = mysqli_query($conn, "SELECT * FROM `Products` WHERE `id` IN (1,2,3)");
+        
+      }
 ?>
 
 
@@ -86,42 +81,29 @@ if (isset($_GET['action'])) {
               
               
               <tbody>
+              <!-- WHILE LOOP -->
+              <?php 
+              $num =1;
+              while($row = mysqli_fetch_array($products)){?>
+             
                 <tr>
-                  <th scope="row">1</th>
-                  <td>Spinach, Tuna, and Egg Salad</td>
-                  <td>15.00$</td>
+                  <th scope="row"><?=$num++;?></th>
+                  <td><?=$row['name'];?></td>
+                  <td><?=$row['price'];?></td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[1]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[<?=$row['id'];?>]">
                   
                   </td>
-                  <td>15.00€</td>
+                  <td><?=$row['price'];?></td>
                  
                   <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
                 </tr>
                 
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Teriyaki Salmon</td>
-                  <td>19.25€</td>
-                  <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[2]">
-                  </td>
-                  <td>19.25€</td>
-                  
-                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
-                </tr>
+                <?php 
+                $num++;
+                } ?>
+              <!-- END WHILE LOOP -->
                 
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Lemon Herb Chicken</td>
-                  <td>17.50€</td>
-                  <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[3]">
-                  </td>
-                  <td>19.25€</td>
-                  
-                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
-                </tr>
               
                 <th scope="row"></th>
                   <td><strong>Total</strong></td>
