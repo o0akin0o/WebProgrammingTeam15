@@ -33,7 +33,11 @@ Feature for customers to book table.
 
 Feature for customers to place orders online. 
 - Links github:
+  + [Menu]
+  + [Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
 - Link to the feature (shell.hamk.fi):
+  + [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+  + [Cart](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
 
 ### Feature 3
 
