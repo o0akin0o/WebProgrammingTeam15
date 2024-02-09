@@ -42,8 +42,8 @@ Feature for customers to place orders online.
 ### Feature 3
 
 Features for customers to Login,Logout your Account. 
-- Links github:https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php
-- Link to the feature (shell.hamk.fi):http://shell.hamk.fi/~bbcap23_15/src/pages/login.php
+- [Login - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php)
+- [Login - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/login.php)
 
 ### Feature 4
 
@@ -53,13 +53,13 @@ Features for admin to make reports for the restaurant: income, numbers of custom
 ### Feature 5
 
 Features for load products from database. 
-- [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-- [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+- [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+- [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 ### Feature 6
 
 Features for customers to create account and track their orders/booking/profile. 
-- [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
-- [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
+- [Create Account - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+- [Create Account - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
 
 ## Database Tables
 
