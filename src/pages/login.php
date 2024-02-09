@@ -10,10 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = $result->fetch_assoc();
     $passwddb= $row["password"];
     $name= $row["name"];
+    $customersid=$row["id"];
     // Kiểm tra thông tin đăng nhập
     if ($passwddb==$password) {
         // Nếu đăng nhập thành công, thiết lập cookie và chuyển hướng đến trang chính
-        setcookie("name", $name, time() + (86400 * 30), "/"); // Cookie có hiệu lực trong 30 ngày
+        setcookie("name", $name, time() + (86400 * 30), "/");
+        setcookie("customersid", $customersid, time() + (86400 * 30), "/"); // Cookie có hiệu lực trong 30 ngày
         $prevPage = $_COOKIE['prev_page'];
         header("Location: $prevPage");
         exit;
@@ -30,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <?php include('links.php'); ?>
-    <title>Create Account</title>
+    <title>Login</title>
     <style>
         .row {
             margin-bottom: 21px; /* Khoảng cách giữa các dòng */
@@ -54,11 +56,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <?php include 'header.php'; ?>
-<div class="booking">
+<div class="login">
     <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <h3 class="booking-title">LOGIN</h3>  
+            <h3 class="login-title">LOGIN</h3>  
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -93,7 +95,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </fieldset>
             </form>
-
+            <div class="form-group">
+                <div class="col-md-12 d-flex">
+                    <label class="col-md-8 col-form-label">******** If you don't have an account, please</label>
+                    <a href="create_account.php" class="col-md-4 col-form-label">create new account</a>
+                </div>
+                </div>
+            </div>
         </div>
         <div class="col-md-4"></div>
     </div>
