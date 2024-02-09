@@ -50,13 +50,15 @@ Features for customers to Login,Logout your Account.
 ### Feature 4
 
 Features for admin to make reports for the restaurant: income, numbers of customer/ Update and change status of Order.
-- Links github:
-- Link to the feature (shell.hamk.fi):
+- [Admin github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+- [Admin shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
+
 ### Feature 5
 
 Features for load products from database. 
 - [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
 - [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+
 ### Feature 6
 
 Features for customers to create account and track their orders/booking/profile. 
