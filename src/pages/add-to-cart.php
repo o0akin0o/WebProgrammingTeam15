@@ -24,20 +24,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
 <body>
     <div class="container mx-auto my-4">
-    <p><a href=""><i class="fa-solid fa-bag-shopping">My cart</i><span>
-        <?php
-            $cart =[];
-            if(isset($_SESSION['cart'])){
-                $cart = $_SESSION['cart'];
-            }
-            $count = 0;
-            foreach ($cart as $item){
-                $count += $item['count'];
-            
-            }
-        
-        ?>;
-    
     </span></a></p>
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
@@ -107,7 +93,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 // FORM
                 echo '<form method="post" >';
                 echo '<div class="card-body">';
-                echo '<input type="text" value="1"' ;
+                
                 echo '<input type="hidden" value="1" name="qty">';
                 echo '</div>';
                 echo '<input type="hidden" value="' . $idsp . '" name="pid">';
