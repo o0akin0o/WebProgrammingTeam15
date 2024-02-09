@@ -28,11 +28,12 @@
                        ?>
                        <!-- FORM -->
                        <form id="cart-form" action="cart.php?action=submit" method="POST">
+                       
                        <div class="form-group row">
                        <div class="jumbotron row mx-auto my-4">
                       <h1 class="display-4">My Cart</h1>
                       <hr class="my-4">
-                      <table class="table table-bordered table-responsive">
+                      <table class="table table-bordered table-responsive table-striped">
               <thead class="thead-dark">
                 <tr>
                   <th scope="" class="col-sm-1">Id</th>
@@ -52,7 +53,7 @@
                   <td>Spinach, Tuna, and Egg Salad</td>
                   <td>15.00$</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[1]">
                   </td>
                   <td>15.00€</td>
                  
@@ -64,7 +65,7 @@
                   <td>Teriyaki Salmon</td>
                   <td>19.25€</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[2]">
                   </td>
                   <td>19.25€</td>
                   
@@ -76,7 +77,7 @@
                   <td>Lemon Herb Chicken</td>
                   <td>17.50€</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[3]">
                   </td>
                   <td>19.25€</td>
                   
@@ -94,14 +95,16 @@
             </table>
             <div class="submit-booking">
                 
-                <input type="submit" class="btn btn-primary submit" name="update_click" value="Update"></input></div>
+                <input type="submit" class="btn btn-primary submit" name="update_click" value="Update"></input>
+                <a href="menu.php" class="btn btn-outline-success"><i class="fa-solid fa-cart-plus"></i>Continue Shopping</a>
             </div>
           </div>
         </form>
-        
+         <!-- END FORM -->
         <!-- END CART -->
         <hr class="my-4">
-        <!-- CUSTOMER DETAIL FORM -->
+        
+       
         <div class="row">
         
         <div class="col-md-6">
@@ -119,6 +122,8 @@
         </div>
       
         <div class="col-md-6">
+        
+         <!-- CUSTOMER DETAIL FORM -->
         <form id="cart-form" action="cart.php?action=submit" >
                 <fieldset>
                   <div class="form-group">
@@ -133,11 +138,11 @@
                     <label for="" class="p-2">Address</label>
                     <input type="text" id="" class="form-control" placeholder="123 Lesmurine">
                   </div>
+                  
                   <div class="form-group">
-                    <label for="" class="p-2">Note</label>
-                    <input type="text" id="" class="form-control" placeholder="Some notes">
-                  </div>
-                 
+    <label for="exampleFormControlTextarea1">Note</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
                 <div class="submit-booking">
                 
                   <input type="submit" class="btn btn-primary submit" name="order_click"></input></div>
