@@ -1,0 +1,11 @@
+CREATE TABLE `Booking` (
+  `id` int NOT NULL,
+  `product_id` int DEFAULT NULL,
+  `customer_id` int DEFAULT NULL,
+  `customer_name` varchar(50) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `booking_date` date DEFAULT NULL,
+  `booking_time` time DEFAULT NULL,
+  `number_of_guest` int DEFAULT NULL,
+  `status` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
