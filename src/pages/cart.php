@@ -1,3 +1,38 @@
+<?php
+// Start the session
+session_start();
+
+// Include the database connection file
+include 'db_connection.php';
+
+// Initialize the cart session variable if it's not set
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+
+// Check if an action is requested
+if (isset($_GET['action'])) {
+    switch ($_GET['action']) {
+        case "add":
+            // Check if the 'qty' array is set in the form submission
+            if (isset($_POST['qty'])) {
+                // Iterate over the submitted quantities and add them to the cart
+                foreach ($_POST['qty'] as $id => $qty) {
+                    // Make sure $id is sanitized to prevent SQL injection
+                    $id = mysqli_real_escape_string($conn, $id);
+                    // Add the item to the cart with its quantity
+                    $_SESSION['cart'][$id] = $qty;
+                }
+            }
+            // Output the contents of the cart
+            var_dump($_SESSION['cart']);
+            exit;
+            break;
+    }
+}
+?>
+
+
 <!DOCTYPE html>
             <html lang="en">
                 <head>
@@ -16,16 +51,18 @@
                         <div class="container mx-auto my-4">
                         <a id="cart" class="link-success"  href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
                        </div>
-                       
-                       <!-- CART -->
                        <div class="container">
-                       <?php 
-                      if(isset($_GET['action'])){
-                        var_dump($_POST); exit;
-                      
-                      }
-            
-                       ?>
+                       
+                       
+   
+
+                       
+                       
+                       
+                       
+                       
+                       
+                       
                        <!-- FORM -->
                       <form action='' method='post' >
                       
@@ -54,7 +91,7 @@
                   <td>Spinach, Tuna, and Egg Salad</td>
                   <td>15.00$</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[1]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[1]">
                   
                   </td>
                   <td>15.00€</td>
@@ -67,7 +104,7 @@
                   <td>Teriyaki Salmon</td>
                   <td>19.25€</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[2]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[2]">
                   </td>
                   <td>19.25€</td>
                   
@@ -79,7 +116,7 @@
                   <td>Lemon Herb Chicken</td>
                   <td>17.50€</td>
                   <td>
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[3]">
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[3]">
                   </td>
                   <td>19.25€</td>
                   

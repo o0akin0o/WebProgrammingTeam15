@@ -59,7 +59,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
         
         for ($i=0; $i<count($cart); $i++){
             if ($cart[$id]['id'] == $id){
-                $cart[$i]['qty']+= $quantity;
+                $cart[$i]['qty']+= $qty;
                 $isFound = true;
                 break;
             }
@@ -73,7 +73,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
         }
         $_SESSION['cart'] = $cart;
         
-        
         }
         
         $idsp = $_GET['id'];
@@ -85,7 +84,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
         <!-- END SEARCH & SORTING PRICE -->
         <div class="container">
-            <form action="cart.php" method="post">
+            <form action="cart.php?action=add" method="post">
                 <div class="row my-4 mt-4">
                     <h1 class="heading">
                         <?php echo $row['name']; ?>
@@ -108,7 +107,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 echo '<form method="post" >';
                 echo '<div class="card-body">';
                 echo '<input type="text" value="1"' ;
-                echo '<input type="hidden" value="1" name="qty">';
+                echo '<input type="hidden" value="1" name="qty[' . $row['id'] . ']">';
                 echo '</div>';
                 echo '<input type="hidden" value="' . $idsp . '" name="pid">';
                
