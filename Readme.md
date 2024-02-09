@@ -28,7 +28,8 @@ In this section, list and describe the features or functionality that you are wo
 Feature for customers to book table.
 -Links github:
 + [booking - Github](https://github.com/o0akin0o/WebProgrammingTeam15/tree/sonali?tab=readme-ov-file)
-- Link to the feature (shell.hamk.fi):
+- Link to the feature (shell.hamk.fi) :
+    + [booking - shell.hamk.fi](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/)
 
 ### Feature 2
 
