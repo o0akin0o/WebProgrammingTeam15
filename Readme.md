@@ -53,13 +53,13 @@ Features for admin to make reports for the restaurant: income, numbers of custom
 ### Feature 5
 
 Features for load products from database. 
-- Links github:https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php
-- Link to the feature (shell.hamk.fi):http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php
+- [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+- [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 ### Feature 6
 
 Features for customers to create account and track their orders/booking/profile. 
-- Links github:https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php
-- Link to the feature (shell.hamk.fi):http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php
+- [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+- [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
 
 ## Database Tables
 
