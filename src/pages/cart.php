@@ -1,4 +1,4 @@
-            <!DOCTYPE html>
+<!DOCTYPE html>
             <html lang="en">
                 <head>
                     <meta charset="UTF-8">
@@ -24,21 +24,17 @@
                         var_dump($_POST); exit;
                       
                       }
-                       
-                       
-                       
-                       
-                       
-                       
-                       
+            
                        ?>
                        <!-- FORM -->
-                       <form id="cart-form" action="cart.php?action=submit" method="POST">
+                      <form action='' method='post' >
+                      
+                       
                        <div class="form-group row">
                        <div class="jumbotron row mx-auto my-4">
                       <h1 class="display-4">My Cart</h1>
                       <hr class="my-4">
-                      <table class="table table-bordered table-responsive">
+                      <table class="table table-bordered table-responsive table-striped">
               <thead class="thead-dark">
                 <tr>
                   <th scope="" class="col-sm-1">Id</th>
@@ -46,7 +42,7 @@
                   <th scope="" class="col-sm-2">Price</th>
                   <th scope="" class="col-sm-1">Quantity</th>
                   <th scope="" class="col-sm-3">Total</th>
-                  <th scope="" class="col-sm-1">Update</th>
+                
                   <th scope="" class="col-sm-1">Delete</th>
                 </tr>
               </thead>
@@ -55,52 +51,82 @@
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Mark</td>
-                  <td>Otto</td>
+                  <td>Spinach, Tuna, and Egg Salad</td>
+                  <td>15.00$</td>
                   <td>
-                  
- 
-                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[]">
-
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[1]">
                   
                   </td>
-                  <td>Mark</td>
-                  <td> </td>
+                  <td>15.00€</td>
+                 
                   <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
                 </tr>
                 
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Teriyaki Salmon</td>
+                  <td>19.25€</td>
+                  <td>
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[2]">
+                  </td>
+                  <td>19.25€</td>
+                  
+                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lemon Herb Chicken</td>
+                  <td>17.50€</td>
+                  <td>
+                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="quantity[3]">
+                  </td>
+                  <td>19.25€</td>
+                  
+                  <td> <input type="submit" class="form-control btn btn-outline-danger" aria-label="Small" aria-describedby="inputGroup-sizing-sm" value="Delete" name="delete_click"></td>
+                </tr>
+              
                 <th scope="row"></th>
                   <td><strong>Total</strong></td>
                   <td></td>
                   <td></td>
-                  <td><strong>$$$</strong></td>
+                  <td><strong>51.75€</strong></td>
                   <td></td>
                 </tr>
               </tbody>
             </table>
             <div class="submit-booking">
                 
-                <input type="submit" class="btn btn-primary submit" name="update_click" value="Update"></input></div>
+                <input type="submit" class="btn btn-primary submit" name="update_click" value="Update"></input>
+                <a href="menu.php" class="btn btn-outline-success"><i class="fa-solid fa-cart-plus"></i>Continue Shopping</a>
             </div>
           </div>
         </form>
-        
+         <!-- END FORM -->
         <!-- END CART -->
         <hr class="my-4">
-        <!-- CUSTOMER DETAIL FORM -->
+        
+       
         <div class="row">
         
         <div class="col-md-6">
         <div class="jumbotron">
-  <h1 class="display-4">Order Details</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4">Order Review</h1>
+  <p class="lead">Spinach, Tuna, and Egg Salad (1)</p>
+  <p class="lead">Lemon Herb Chicken (1)</p>
+  <p class="lead">Teriyaki Salmon (1)</p>
+  <p class="lead">Shipping: 5€</p>
+  <p class="lead">Tax: 5%</p>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <h3>Total: 51.75€</h3>
+   
    
 </div>
         </div>
       
         <div class="col-md-6">
+        
+         <!-- CUSTOMER DETAIL FORM -->
         <form id="cart-form" action="cart.php?action=submit" >
                 <fieldset>
                   <div class="form-group">
@@ -115,11 +141,11 @@
                     <label for="" class="p-2">Address</label>
                     <input type="text" id="" class="form-control" placeholder="123 Lesmurine">
                   </div>
+                  
                   <div class="form-group">
-                    <label for="" class="p-2">Note</label>
-                    <input type="text" id="" class="form-control" placeholder="Some notes">
-                  </div>
-                 
+    <label for="exampleFormControlTextarea1">Note</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
                 <div class="submit-booking">
                 
                   <input type="submit" class="btn btn-primary submit" name="order_click"></input></div>
