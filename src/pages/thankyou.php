@@ -22,7 +22,7 @@
         <div class="col-md-5"></div>
     <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-5">
+        <div class="col-md-5 mb-5">
             <img class="banner-img booking-img" src="./img/booking.jpg"
             alt="Card image cap">
         </div>

@@ -24,20 +24,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
 <body>
     <div class="container mx-auto my-4">
-    <p><a href=""><i class="fa-solid fa-bag-shopping">My cart</i><span>
-        <?php
-            $cart =[];
-            if(isset($_SESSION['cart'])){
-                $cart = $_SESSION['cart'];
-            }
-            $count = 0;
-            foreach ($cart as $item){
-                $count += $item['count'];
-            
-            }
-        
-        ?>;
-    
     </span></a></p>
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
@@ -100,13 +86,13 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="' . $row['name'] . '">';
                 echo '</div>';
                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                echo '<p class="">' . $row['name'] . '</p>';
+                echo '<h3 class="">' . $row['name'] . '</h3>';
                 echo '<p class="">' . $row['description'] . '</p>';
-                echo '<p class="">' . $row['price'] . '$</p>';
+                echo '<h4 class="">' . $row['price'] . '$</h4>';
                 // FORM
                 echo '<form method="post" >';
                 echo '<div class="card-body">';
-                echo '<input type="text" value="1"' ;
+                echo '<input type="text" value="1" class="mb-2" size="3"' ;
                 echo '<input type="hidden" value="1" name="qty[' . $row['id'] . ']">';
                 echo '</div>';
                 echo '<input type="hidden" value="' . $idsp . '" name="pid">';
@@ -124,14 +110,19 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 // close connection
                 $conn->close();
                 ?>
+                
+                </form> 
+                
+                 <?php include 'footer.php'; ?>
         </div> <!-- END OF CONTAINER -->
-        </form>
+           
+       
     </div><!-- END OF CONTAINER -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <?php include 'footer.php'; ?>
+
 
 </body>
 
