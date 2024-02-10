@@ -94,14 +94,18 @@ if (isset($_GET['action'])) {
           $orderId= $conn->insert_id;
          
           $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
-          if($insertOrderDetails){
-            header("location: thankyou.php");
-          
+         
+        if ($insertOrderDetails) {
+  
+         unset($_SESSION['cart']);
+          header("location: thankyou.php");
+        }
+
         }
         }
       }  
   }
-}
+
 if (!empty($_SESSION['cart'])) {
   $join = implode(",", array_keys($_SESSION['cart']));
   $products = mysqli_query($conn, "SELECT * FROM `Products` WHERE `id` IN ($join)");
@@ -126,18 +130,17 @@ if (!empty($_SESSION['cart'])) {
     <?php include 'header.php'; ?>
 
     <!-- MY CART -->
-
-    <div class="container mx-auto my-4">
-      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
-    </div>
+    <?php include 'login_nav.php'; ?>
+    <?php include 'mycart.php'; ?>
     <div class="container">
       
       <!-- FORM -->
       <form action='cart.php?action=submit' method='post'>
-
+          
         <div class="form-group row">
           <div class="jumbotron row mx-auto my-4">
-            <h1 class="display-4">My Cart</h1>
+            <h1 class="display-3">My Cart</h1>
+            
             <hr class="my-4">
             <table class="table table-bordered table-responsive table-striped">
               <thead class="thead-dark">
