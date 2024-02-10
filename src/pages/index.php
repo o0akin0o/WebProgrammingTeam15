@@ -36,7 +36,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Grilled Steak Kabobs</h5>
                                 <p class="card-text">Main Dishes </p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -48,7 +48,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Honey Sesame Tofu</h5>
                                 <p class="card-text">Main Dishes</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -60,7 +60,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Coconut & Citrus Green</h5>
                                 <p class="card-text">Drinks</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -72,7 +72,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Blackberry Apple</h5>
                                 <p class="card-text">Drinks</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -90,7 +90,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Gingerbread Donut Bear</h5>
                                 <p class="card-text">Desert</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -102,7 +102,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Blueberry Cheesecake</h5>
                                 <p class="card-text">Desert</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -114,7 +114,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Paras Kebab Kotona</h5>
                                 <p class="card-text">Main Dishes</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -126,7 +126,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <div class="card-body">
                                 <h5 class="card-title">Chopped Power Salad</h5>
                                 <p class="card-text">Salads</p>
-                                <a href="#" class="btn btn-primary">Order</a>
+                                <a href="menu.php" class="btn btn-primary">Order</a>
                             </div>
                         </div>
                         
@@ -146,7 +146,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                     <p class="">Savor a fusion of local and Eastern spices in every dish at Eastern Kitchen. Our unique menu, crafted with Eastern cooking methods, promises a distinct taste and experience. Order now and treat your palate to something extraordinary.</p>
                     <div class="card-body">
                        
-                        <a href="menu.html" class="btn btn-primary">Menu</a>
+                        <a href="menu.php" class="btn btn-primary">Menu</a>
                     </div>
                   </div>
                   <div class="col-sm-1 col-md-1"></div>
@@ -163,7 +163,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                     <p class="">Order online for a culinary journey delivered to your doorstep or reserve a table for a specialized and finest dining experience tailored to your preferences. Your extraordinary dining adventure begins with us.</p>
                     <div class="card-body">
                        
-                        <a href="booking.html" class="btn btn-primary">Booking</a>
+                        <a href="booking.php" class="btn btn-primary">Booking</a>
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6">
