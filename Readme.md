@@ -49,9 +49,9 @@ Features for customers to Login,Logout your Account.
 
 ### Feature 4
 
-Features for admin to make reports for the restaurant: income, numbers of customer/ Update and change status of Order.
-- [Admin github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
-- [Admin shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
+Features for admin to make reports for the restaurant: income, numbers of customer, bookings, orders/ Update and change status of Order.
+- [Admin github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php) (https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
+- [Admin shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php) (http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
 
 ### Feature 5
 
@@ -91,11 +91,14 @@ List and describe any forms that have been created as part of your project. Incl
    and the total cost. Finally, there is a section for entering customer details and placing the order.
  + Purpose: The purpose of the form is to provide users with a convenient way to reiew and manage their orders before finalizing them. Users can adjust the quantities of items, remove unwanted     items, and enter their contact and delivery information before placing the order.
  + Validation: user needs to log in first before completing order. All contact form fields are required.
-
+ 
    
-- Form 4: (Created By Phuong Le):  Form Name: Admin Page and Update Order: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 4: (Created By Phuong Le):  Form Name: Update Order [github]((https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update_delete.php)
+  | [shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update_delete.php)
++ The form allows admin to view, update status of orders, delete order
++ Validations Applied: user must update status and fill all relevant information within the form.
 
----
+
 
 ## Created Tables
 
