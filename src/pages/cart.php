@@ -90,7 +90,7 @@ if (isset($_GET['action'])) {
        
           }
   
-          $insertOrder = mysqli_query($conn, "INSERT INTO `Order` (`id`, `name`, `phone`, `address`, `note`, `total`, `created_time`, `last_updated`, `customer_id`) VALUES (NULL, '$name', '$phone', '$address', '$note', '$total', NOW(), NOW() , NULL)");
+          $insertOrder = mysqli_query($conn, "INSERT INTO `Order` (`id`, `name`, `phone`, `address`, `note`, `total`, `created_time`, `last_updated`, `customer_id`, `status`) VALUES (NULL, '$name', '$phone', '$address', '$note', '$total', NOW(), NOW() , NULL, 'Pending')");
           $orderId= $conn->insert_id;
          
           $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
