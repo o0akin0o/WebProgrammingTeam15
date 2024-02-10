@@ -27,7 +27,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     </span></a></p>
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
-            
+        <?php include('mycart.php'); ?>
         <?php
         require_once('db_connection.php');
         
@@ -97,7 +97,8 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 echo '</div>';
                 echo '<input type="hidden" value="' . $idsp . '" name="pid">';
                
-                echo '<button href="cart.php" name="atcbtn" class="btn btn-primary">Add To Cart</button>';
+                echo '<button href="cart.php" name="atcbtn" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i>Add To Cart</button>';
+                echo ' <a href="menu.php" class="btn btn-outline-success"><i class="fa-solid fa-cart-plus"></i>Continue Shopping</a>';
                 
                 echo '</form>';           
                 // END FORM
