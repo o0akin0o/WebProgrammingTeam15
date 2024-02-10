@@ -83,13 +83,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
-                                echo '<p type="hidden" class="">' . $row['id'] . '$</p>">';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                                echo '<input type="submit" value="Submit">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -99,12 +98,11 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                            
-                                //ORDER BUTTON
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
@@ -135,11 +133,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -149,11 +148,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -182,11 +182,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -196,11 +197,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -249,11 +251,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -263,11 +266,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -297,11 +301,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -311,11 +316,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -344,11 +350,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -358,11 +365,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -411,11 +419,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -425,11 +434,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -459,11 +469,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -506,11 +517,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<img class="imgmenu" src="' . $row['img_path'] . '" alt="Card image cap">';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -520,11 +532,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<div class="row my-4 mt-4">';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '<div class="col-sm-5 col-md-5 bn-content">';
-                                echo '<p class="">' . $row['name'] . '</p>';
+                                echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
-                                echo '<p class="">' . $row['price'] . '$</p>';
+                                echo '<h5 class="">' . $row['price'] . '$</h5>';
+                                
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -546,6 +559,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 // close connection
                 $conn->close();
                 ?>
+                <?php include 'footer.php'; ?>
         </div> <!-- END OF CONTAINER -->
         </form>
     </div><!-- END OF CONTAINER -->
@@ -553,7 +567,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    <?php include 'footer.php'; ?>
+    
 
 </body>
 
