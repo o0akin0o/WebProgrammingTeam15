@@ -29,13 +29,13 @@
                         <a class="nav-link" href="home.php">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex2.php">Menu</a>
+                            <a class="nav-link" href="menu.php">Menu</a>
                         </li>
                         <li>
                             <a class="nav-link" href="bookin.php">Booking</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex4.php">About</a>
+                            <a class="nav-link" href="about.php">About</a>
                         </li>
                         
                     </ul>
