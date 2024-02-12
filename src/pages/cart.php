@@ -4,6 +4,11 @@ session_start();
 
 // Include the database connection file
 include 'db_connection.php';
+
+
+
+
+
 $products = null;
 if (!isset($_SESSION['cart'])) {
   $_SESSION['cart'] = array();
@@ -52,11 +57,16 @@ if (isset($_GET['action'])) {
       header('Location: ./cart.php');
       break;
     case "submit":
+
+
+
+
       if (isset($_POST['update_click'])) {
         update_cart();
         header('Location: ./cart.php');
 
       } elseif (isset($_POST['order_click'])) {
+
         if (empty($_POST['qty'])) {
           $error = "Your cart is empty";
         } elseif (empty($_POST['name']) && !empty($_POST['qty'])) {
@@ -69,37 +79,60 @@ if (isset($_GET['action'])) {
           $error = "You did not input address";
 
         } elseif ($error == false && !empty($_POST['qty'])) {
-          $total = 0;
-          $name = $_POST['name'];
-          $phone = $_POST['phone'];
-          $address = $_POST['address'];
-          $note = $_POST['note'];
 
+          if (!isset($_COOKIE["name"])) {
+            // Redirect to login if customer ID is not set
+            header("Location: login.php");
+            exit;
+          } else {
+            $customerName = $_COOKIE["name"];
+            $sql = "SELECT id FROM Customers WHERE name = '$customerName'";
+            $result = mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0) {
+              // Fetch the row and retrieve the customer ID
+              $row = mysqli_fetch_assoc($result);
+              $customerId = $row['id'];
 
-          $join = implode(",", array_keys($_POST['qty']));
-          $products = mysqli_query($conn, "SELECT * FROM `Products` WHERE `id` IN ($join)");
+              // Calculate total
+              $total = 0;
+              $name = $_POST['name'];
+              $phone = $_POST['phone'];
+              $address = $_POST['address'];
+              $note = $_POST['note'];
 
-          while ($row = mysqli_fetch_array($products)) {
-            $total += $row['price'] * $_POST['qty'][$row['id']];
-            $proId = $row['id'];
-            $proQty = $_POST['qty'][$row['id']];
-            $proPrice = $row['price'];
+              $join = implode(",", array_keys($_POST['qty']));
+              $products = mysqli_query($conn, "SELECT * FROM `Products` WHERE `id` IN ($join)");
 
+              while ($row = mysqli_fetch_array($products)) {
+                $total += $row['price'] * $_POST['qty'][$row['id']];
+                $proId = $row['id'];
+                $proQty = $_POST['qty'][$row['id']];
+                $proPrice = $row['price'];
+              }
+
+              // Insert order into Orders table
+              $insertOrder = mysqli_query($conn, "INSERT INTO `Orders` (`id`, `name`, `phone`, `address`, `note`, `total`, `created_time`, `last_updated`, `customer_id`, `status`) VALUES (NULL, '$name', '$phone', '$address', '$note', '$total', NOW(), NOW() , '$customerId', 'Pending')");
+              $orderId = $conn->insert_id;
+
+              // Insert order details into Order_Details table
+              $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
+
+              // Redirect to thank you page if order details inserted successfully
+              if ($insertOrderDetails) {
+                unset($_SESSION['cart']);
+                header("Location: thankyou.php");
+                
+                exit;
+              } else {
+                // Handle the case where order details insertion failed
+                echo "Failed to insert order details.";
+              }
+            } else {
+              // Handle the case where customer ID couldn't be retrieved
+              echo "Customer ID not found for the provided name.";
+            }
 
           }
-         
-          $insertOrder = mysqli_query($conn, "INSERT INTO `Orders` (`id`, `name`, `phone`, `address`, `note`, `total`, `created_time`, `last_updated`, `customer_id`, `status`) VALUES (NULL, '$name', '$phone', '$address', '$note', '$total', NOW(), NOW() , NULL, 'Pending')");
-          $orderId = $conn->insert_id;
-
-         
-          $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
-
-          if ($insertOrderDetails) {
-
-            unset($_SESSION['cart']);
-            header("location: thankyou.php");
-          }
-
         }
       }
   }
@@ -127,10 +160,12 @@ if (!empty($_SESSION['cart'])) {
 <body>
   <div class="container mx-auto my-4">
     <?php include 'header.php'; ?>
-
-    <!-- MY CART -->
     <?php include 'login_nav.php'; ?>
-    <?php include 'mycart.php'; ?>
+    <!-- MY CART -->
+
+    <div class="container mx-auto my-4">
+      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+    </div>
     <div class="container">
 
       <!-- FORM -->
@@ -138,81 +173,78 @@ if (!empty($_SESSION['cart'])) {
 
         <div class="form-group row">
           <div class="jumbotron row mx-auto my-4">
-            <h1 class="display-3">My Cart</h1>
-            <?php
-            if ($products !== null && mysqli_num_rows($products) > 0) {
-              echo '<hr class="my-4">';
-              echo '<table class="table table-bordered table-responsive table-striped">';
-              echo '<thead class="thead-dark">';
-              echo '<tr>';
-              echo '<th scope="" class="col-sm-1"></th>';
-              echo '<th scope="" class="col-sm-3">Name</th>';
-              echo '<th scope="" class="col-sm-2">Price</th>';
-              echo '<th scope="" class="col-sm-1">Quantity</th>';
-              echo '<th scope="" class="col-sm-3">Total</th>';
-              echo '<th scope="" class="col-sm-1"></th>';
-              echo '<th scope="" class="col-sm-1"></th>';
-              echo '</tr>';
-              echo '</thead>';
-            }
-            ?>
-
-            <tbody>
-              <!-- WHILE LOOP -->
-              <?php
-              $num = 1;
-              $total = 0;
-              if ($products !== null && mysqli_num_rows($products) > 0) {
-                while ($row = mysqli_fetch_array($products)) { ?>
-
-                  <tr>
-                    <td>
-                      <?= $num; ?>
-                    </td>
-                    <td>
-                      <?= $row['name']; ?>
-                    </td>
-                    <td>
-                      <?= $row['price']; ?> €
-                    </td>
-                    <td>
-                      <input type="number" value="<?= $_SESSION['cart'][$row['id']] ?>" class="form-control"
-                        aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[<?= $row['id']; ?>]">
-
-                    </td>
-                    <td>
-                      <?= number_format(($row['price'] * $_SESSION['cart'][$row['id']]), 0, ",", "."); ?> €
-                    </td>
-                    <td><input type="submit" class="btn btn-outline-success submit" name="update_click"
-                        value="Update"></input>
-                    </td>
-                    <td> <a class="btn btn-outline-danger" href="cart.php?action=delete&id=<?= $row['id'] ?>">Delete</a>
-                    </td>
-                  </tr>
-
-                  <?php
-                  $num++;
-                  $total += ($row['price'] * $_SESSION['cart'][$row['id']]);
-                }
-                ?>
-                <th scope="row"></th>
-                <td><strong>Total</strong></td>
-                <td></td>
-                <td></td>
-                <td><strong>
-                    <?= number_format($total, 0, ",", ".") ?> €
-                  </strong></td>
-                <td></td>
+            <h1 class="display-4">My Cart</h1>
+            <hr class="my-4">
+            <table class="table table-bordered table-responsive table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="" class="col-sm-1"></th>
+                  <th scope="" class="col-sm-3">Name</th>
+                  <th scope="" class="col-sm-2">Price</th>
+                  <th scope="" class="col-sm-1">Quantity</th>
+                  <th scope="" class="col-sm-3">Total</th>
+                  <th scope="" class="col-sm-1"></th>
+                  <th scope="" class="col-sm-1"></th>
                 </tr>
-              </tbody>
+              </thead>
+
+
+              <tbody>
+                <!-- WHILE LOOP -->
+                <?php
+                $num = 1;
+                $total = 0;
+                if ($products !== null && mysqli_num_rows($products) > 0) {
+                  while ($row = mysqli_fetch_array($products)) { ?>
+
+                    <tr>
+                      <td>
+                        <?= $num; ?>
+                      </td>
+                      <td>
+                        <?= $row['name']; ?>
+                      </td>
+                      <td>
+                        <?= $row['price']; ?> €
+                      </td>
+                      <td>
+                        <input type="number" value="<?= $_SESSION['cart'][$row['id']] ?>" class="form-control"
+                          aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[<?= $row['id']; ?>]">
+
+                      </td>
+                      <td>
+                        <?= number_format(($row['price'] * $_SESSION['cart'][$row['id']]), 0, ",", "."); ?> €
+                      </td>
+                      <td><input type="submit" class="btn btn-outline-success submit" name="update_click"
+                          value="Update"></input>
+                      </td>
+                      <td> <a class="btn btn-outline-danger" href="cart.php?action=delete&id=<?= $row['id'] ?>">Delete</a>
+                      </td>
+                    </tr>
+
+                    <?php
+                    $num++;
+                    $total += ($row['price'] * $_SESSION['cart'][$row['id']]);
+                  }
+                  ?>
+                  <th scope="row"></th>
+                  <td><strong>Total</strong></td>
+                  <td></td>
+                  <td></td>
+                  <td><strong>
+                      <?= number_format($total, 0, ",", ".") ?> €
+                    </strong></td>
+                  <td></td>
+                  </tr>
+                </tbody>
               </table>
 
               <?php
 
-              } else {
+                } else {
 
-                echo "Your cart is empty.";
-              } ?>
+                  echo "Your cart is empty.";
+                } ?>
 
 
 

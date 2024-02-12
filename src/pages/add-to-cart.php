@@ -27,7 +27,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     </span></a></p>
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
-        <?php include('mycart.php'); ?>
+             <!-- MY CART -->
+
+    <div class="container mx-auto my-4">
+      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+    </div>
+    <div class="container">
         <?php
         require_once('db_connection.php');
         
@@ -97,9 +102,9 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 echo '</div>';
                 echo '<input type="hidden" value="' . $idsp . '" name="pid">';
                
-                echo '<button href="cart.php" name="atcbtn" class="btn btn-primary"><i class="fa-solid fa-bag-shopping"></i>Add To Cart</button>';
-                echo ' <a href="menu.php" class="btn btn-outline-success"><i class="fa-solid fa-cart-plus"></i>Continue Shopping</a>';
-                
+                echo '<button href="cart.php" name="atcbtn" class="btn btn-primary">Check Out</button>';
+                echo '<input type="hidden" id="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i>+</a>';
                 echo '</form>';           
                 // END FORM
                 echo '</div>';

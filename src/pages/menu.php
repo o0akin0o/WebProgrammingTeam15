@@ -26,9 +26,15 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     <div class="container mx-auto my-4">
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
-        <?php include('mycart.php'); ?>
         <!-- SEARCH & SORT FOOD BY PRICE -->
+         <!-- MY CART -->
+
+    <div class="container mx-auto my-4">
+      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+    </div>
+    
         <div class="container">
+
 
             <div class="row mt-2">
                 <div class="col-sm-3 col-md-3">
@@ -37,7 +43,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <input type="text" class="form-control" placeholder="Your dishes" aria-label="Search"
                                 aria-describedby="button-addon2" name="name">
                             <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-
+                            
                         </div>
                     </form>
                 </div>
@@ -89,8 +95,16 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
                                 
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
-                                echo '</div>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary mr-3">Order Now</a>';
+                                echo '<input type="hidden" id="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                
+                                // ADD TO CART FORM
+                                echo '<form id="add-to-cart-form" action="cart.php?action=add" method="POST">';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i>+</a>';
+                                echo '</form>';
+                                
+                                
+                                echo '</div>'; 
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '</div>';
