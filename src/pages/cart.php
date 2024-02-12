@@ -121,7 +121,7 @@ if (isset($_GET['action'])) {
               if ($insertOrderDetails) {
                 unset($_SESSION['cart']);
                 header("Location: thankyou.php");
-                
+
                 exit;
               } else {
                 // Handle the case where order details insertion failed
@@ -176,57 +176,47 @@ if (!empty($_SESSION['cart'])) {
             <h1 class="display-4">My Cart</h1>
             <hr class="my-4">
             <table class="table table-bordered table-responsive table-striped">
-              <thead class="thead-dark">
+
+              
+              <?php
+$num = 1;
+$total = 0;
+if ($products !== null && mysqli_num_rows($products) > 0) {
+?>
+    <div class="jumbotron row mx-auto my-4">
+        
+            <thead class="thead-dark">
                 <tr>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-3">Name</th>
-                  <th scope="" class="col-sm-2">Price</th>
-                  <th scope="" class="col-sm-1">Quantity</th>
-                  <th scope="" class="col-sm-3">Total</th>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-1"></th>
+                    <th scope="col" class="col-sm-1">#</th>
+                    <th scope="col" class="col-sm-3">Name</th>
+                    <th scope="col" class="col-sm-2">Price</th>
+                    <th scope="col" class="col-sm-1">Quantity</th>
+                    <th scope="col" class="col-sm-3">Total</th>
+                    <th scope="col" class="col-sm-1"></th>
+                    <th scope="col" class="col-sm-1"></th>
                 </tr>
-              </thead>
-
-
-              <tbody>
-                <!-- WHILE LOOP -->
-                <?php
-                $num = 1;
-                $total = 0;
-                if ($products !== null && mysqli_num_rows($products) > 0) {
-                  while ($row = mysqli_fetch_array($products)) { ?>
-
-                    <tr>
-                      <td>
-                        <?= $num; ?>
-                      </td>
-                      <td>
-                        <?= $row['name']; ?>
-                      </td>
-                      <td>
-                        <?= $row['price']; ?> €
-                      </td>
-                      <td>
-                        <input type="number" value="<?= $_SESSION['cart'][$row['id']] ?>" class="form-control"
-                          aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[<?= $row['id']; ?>]">
-
-                      </td>
-                      <td>
-                        <?= number_format(($row['price'] * $_SESSION['cart'][$row['id']]), 0, ",", "."); ?> €
-                      </td>
-                      <td><input type="submit" class="btn btn-outline-success submit" name="update_click"
-                          value="Update"></input>
-                      </td>
-                      <td> <a class="btn btn-outline-danger" href="cart.php?action=delete&id=<?= $row['id'] ?>">Delete</a>
-                      </td>
-                    </tr>
+            </thead>
+            <tbody>
+<?php
+    while ($row = mysqli_fetch_array($products)) {
+?>
+                <tr>
+                    <td><?= $num; ?></td>
+                    <td><?= $row['name']; ?></td>
+                    <td><?= $row['price']; ?> €</td>
+                    <td>
+                        <input type="number" value="<?= $_SESSION['cart'][$row['id']] ?>" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" name="qty[<?= $row['id']; ?>]">
+                    </td>
+                    <td><?= number_format(($row['price'] * $_SESSION['cart'][$row['id']]), 0, ",", "."); ?> €</td>
+                    <td><input type="submit" class="btn btn-outline-success submit" name="update_click" value="Update"></td>
+                    <td><a class="btn btn-outline-danger" href="cart.php?action=delete&id=<?= $row['id'] ?>">Delete</a></td>
+                </tr>
 
                     <?php
                     $num++;
                     $total += ($row['price'] * $_SESSION['cart'][$row['id']]);
-                  }
-                  ?>
+                }
+                ?>
                   <th scope="row"></th>
                   <td><strong>Total</strong></td>
                   <td></td>
@@ -241,10 +231,10 @@ if (!empty($_SESSION['cart'])) {
 
               <?php
 
-                } else {
+              } else {
 
-                  echo "Your cart is empty.";
-                } ?>
+                echo "Your cart is empty.";
+              } ?>
 
 
 
