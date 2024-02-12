@@ -36,9 +36,11 @@ Feature for customers to book table.
 Feature for customers to place orders online. 
 - Links github:
   + [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+  + [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
   + [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
 - Link to the feature (shell.hamk.fi):
   + [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+  + [AddToCart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
   + [Cart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
 
 ### Feature 3
@@ -87,9 +89,8 @@ List and describe any forms that have been created as part of your project. Incl
 
 - Form 3: (Created By Dan Le): Form Name: Checkout Page [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
  | [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php).  | Validations Applied
-     + The form allows users to view and manage items in their shopping cart before placing an order. It consists of a table displaying the items in the cart, along with their prices, quantities,      and total amounts. Additionally, users can update quantities or remove items from the cart. Below the cart table, there is an order review section displaying a summary of the selected items 
-   and the total cost. Finally, there is a section for entering customer details and placing the order.
-     + Purpose: The purpose of the form is to provide users with a convenient way to reiew and manage their orders before finalizing them. Users can adjust the quantities of items, remove unwanted     items, and enter their contact and delivery information before placing the order.
+     + The form allows users to view and manage items in their shopping cart before placing an order. It consists of a table displaying the items in the cart, along with their prices, quantities, and total amounts. Additionally, users can update quantities or remove items from the cart. Below the cart table, there is an order review section displaying a summary of the selected items and the total cost. Finally, there is a section for entering customer details and placing the order.
+     + Purpose: The purpose of the form is to provide users with a convenient way to reiew and manage their orders before finalizing them. Users can adjust the quantities of items, remove unwanted items, and enter their contact and delivery information before placing the order.
      + Validation: user needs to log in first before completing order. All contact form fields are required.
  
    
