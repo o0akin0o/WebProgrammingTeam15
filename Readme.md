@@ -19,7 +19,7 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 1 (Sonali Mitua): Booking. 
 - [ ] Feature 2 (Dan Le): Orders. Add To Cart. Search / Sort for Menu Page. Index Page. Thank you Page.
 - [ ] Feature 3 (Quan Le):Log In/ Log Out.
-- [ ] Feature 4 (Phuong Le):Admin management.
+- [ ] Feature 4 (Phuong Le):Admin management: Report, update, delete information.
 - [ ] Feature 5 (Quan Le): Menu Page
 - [ ] Feature 6 (Quan Le): Create Account, Customers Page
 
@@ -45,15 +45,20 @@ Feature for customers to place orders online.
 
 ### Feature 3
 
-Features for customers to Login,Logout your Account. 
+Features for customers to log in, Logout your Account. 
 - [Login - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php)
 - [Login - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/login.php)
 
 ### Feature 4
 
-Features for admin to make reports for the restaurant: income, numbers of customer, bookings, orders/ Update and change status of Order.
-- [Admin github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php) (https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
-- [Admin shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php) (http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
+Features for admin to make reports for the restaurant: income, numbers of customers, bookings, orders.
+Features to update information, delete information.
+ - Links github:
+   + [Admin - report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
+   + [Admin - update & delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+-  Links to the feature (shell.hamk.fi):
+    + [Admin-report- shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
+    + [Admin - update & delete](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
 
 ### Feature 5
 
@@ -94,10 +99,11 @@ List and describe any forms that have been created as part of your project. Incl
      + Validation: user needs to log in first before completing order. All contact form fields are required.
  
    
-- Form 4: (Created By Phuong Le):  Form Name: Update Order [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update_delete.php)
-  | [shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update_delete.php)
-    + The form allows admin to view, update status of orders, delete order
-    + Validations Applied: user must update status and fill all relevant information within the form.
+- Form 4: (Created By Phuong Le):  Form Name: Update Order [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
+  | [shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
+    + The form allows admin to view, update orders, delete order
+    + Form(s) with JavaScript validation: User must fill information in required field: Name, total order, status, order's note
+    + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet the requirements."
 
 
 
