@@ -26,7 +26,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     <div class="container mx-auto my-4">
         <?php include 'header.php'; ?>
         <?php include('second_nav.php'); ?>
-        <?php include('search_sort.php'); ?>
+        <?php include('./features/search_sort.php'); ?>
 
 
         <div class="container">
@@ -70,7 +70,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
      
                                 // FORM
                                
-                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<form class="quick-buy-form" action="./features/process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
                                 
                                 echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>'; 
@@ -771,7 +771,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
                 $.ajax({
                     type: 'POST',
-                    url: './process_cart.php?action=add', // Corrected URL
+                    url: './features/process_cart.php?action=add', // Corrected URL
                     data: formData,
                     success: function (response) {
                         

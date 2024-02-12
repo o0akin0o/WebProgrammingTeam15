@@ -1,4 +1,7 @@
-<?php include('cart_feature.php'); ?>
+<?php
+include("./features/cart_feature.php");
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
