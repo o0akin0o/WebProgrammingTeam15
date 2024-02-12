@@ -17,7 +17,7 @@ Our website, Eastern Kitchen Restaurant, offers both online ordering and table r
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Sonali Mitua): Booking. 
-- [ ] Feature 2 (Dan Le): Orders. Add To Cart. Search / Sort for Menu Page. Index Page.
+- [ ] Feature 2 (Dan Le): Orders. Add To Cart. Search / Sort for Menu Page. Index Page. Thank you Page.
 - [ ] Feature 3 (Quan Le):Log In/ Log Out.
 - [ ] Feature 4 (Phuong Le):Admin management.
 - [ ] Feature 5 (Quan Le): Menu Page
