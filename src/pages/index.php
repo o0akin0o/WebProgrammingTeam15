@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet" />
+
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,400;1,600&family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+            <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
         <title>Restaurant</title>
     </head>
     <body>
@@ -20,8 +21,10 @@
             <?php include ('header.php'); ?>
             <?php include ('login_nav.php'); ?>
             <!-- END OF NAV BAR -->
-
             
+            <div class="container mx-auto my-4">
+      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+    </div>
             <div class="container">
                 
                 <div class="row my-4 mt-4">
@@ -32,14 +35,15 @@
                 <div class="row my-4 mt-4">
                     <div class="row card-container">
                         <div
-                            class="card text-center shadow p-3 mb-5 bg-white rounded"
-                            style="width: 14rem; height: auto;">
+                            class="card cardindex text-center shadow p-3 mb-5 bg-white rounded"
+                            style="width: 14rem; height: auto; cursor:pointer;">
                             <img class="card-img-top index-food" src="./img/barbeque.jpg"
                                 alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Grilled Steak Kabobs</h5>
                                 <p class="card-text">Main Dishes </p>
                                 <a href="#" class="btn btn-primary">Order</a>
+                                
                             </div>
                         </div>
                         
@@ -177,8 +181,6 @@
                 </div>
               </div><!-- END OF BANNER 2-->
             </div> <!-- END OF CONTAINER -->
-           
-           
             <?php include ('footer.php'); ?>
         </div><!-- END OF CONTAINER -->
 
