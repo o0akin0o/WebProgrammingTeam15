@@ -27,12 +27,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
         <?php include 'header.php'; ?>
         <?php include('login_nav.php'); ?>
         <!-- SEARCH & SORT FOOD BY PRICE -->
-         <!-- MY CART -->
+        <!-- MY CART -->
 
-    <div class="container mx-auto my-4">
-      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
-    </div>
-    
+        <div class="container mx-auto my-4">
+            <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+        </div>
+
         <div class="container">
 
 
@@ -43,7 +43,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                             <input type="text" class="form-control" placeholder="Your dishes" aria-label="Search"
                                 aria-describedby="button-addon2" name="name">
                             <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-                            
+
                         </div>
                     </form>
                 </div>
@@ -60,7 +60,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
         </div>
         <!-- END SEARCH & SORTING PRICE -->
         <div class="container">
-            <form action="cart.php" method="post">
+            <form action="" class="quick-buy-form" method="post">
                 <div class="row my-4 mt-4">
                     <h1 class="heading">Salads</h1>
                 </div>
@@ -93,18 +93,26 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary mr-3">Order Now</a>';
-                                echo '<input type="hidden" id="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+
+                                 // ADD TO CART 
+     
+                                // FORM
+                               
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
                                 
-                                // ADD TO CART FORM
-                                echo '<form id="add-to-cart-form" action="cart.php?action=add" method="POST">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-outline-primary"><i class="fa-solid fa-cart-shopping"></i>+</a>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>'; 
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
-                                
-                                
-                                echo '</div>'; 
+                                // END FORM
+                
+                                // END ADD TO CART 
+                
+
+                                echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
                                 echo '</div>';
@@ -116,9 +124,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+                                
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -153,7 +173,14 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
                                 
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -166,9 +193,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -200,9 +239,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -215,9 +266,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -269,9 +332,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -284,9 +359,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -319,9 +406,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -334,9 +433,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -368,9 +479,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -383,9 +506,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -437,9 +572,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -452,9 +599,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -487,9 +646,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -503,7 +674,19 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                               echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -535,9 +718,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -550,9 +745,21 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
+
                                 echo '<div class="card-body">';
-                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Order Now</a>';
+                                  // ADD TO CART 
+   
+                
+                                // FORM
+                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
+                                echo '<span class="m-1"></span>';
+                                echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
+                                echo '</form>';
+                                // END FORM
+                
+                                // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-5 col-md-5">';
@@ -578,11 +785,34 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
         </div> <!-- END OF CONTAINER -->
         </form>
     </div><!-- END OF CONTAINER -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-    
+
+    <script>
+        $(document).ready(function () {
+
+            $('.quick-buy-form').submit(function (e) {
+
+                e.preventDefault();
+
+                var formData = $(this).serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: './process_cart.php?action=add', // Corrected URL
+                    data: formData,
+                    success: function (response) {
+                        
+                        alert('Dish added successfully');
+                       
+                    }
+                });
+            });
+        });
+    </script>
+
 
 </body>
 
