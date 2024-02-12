@@ -8,7 +8,8 @@
   src: URL(./fonts/butter-pineapple.regular.otf);
 }
 body {
-  background-image: url("./img/lettuce.png");
+  background-image: url("./img/lettuce.png"); 
+ 
   background-repeat: no-repeat;
   background-size: cover;
   /* backdrop-filter: blur(5px); */
@@ -73,7 +74,7 @@ form{
   
 }
 .card:hover{
-  transform: scale(1.15); !important
+  
 
 }
 

@@ -164,7 +164,7 @@ if (!empty($_SESSION['cart'])) {
     <!-- MY CART -->
 
     <div class="container mx-auto my-4">
-      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
+      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart</i></a>
     </div>
     <div class="container">
 
@@ -176,26 +176,26 @@ if (!empty($_SESSION['cart'])) {
             <h1 class="display-4">My Cart</h1>
             <hr class="my-4">
             <table class="table table-bordered table-responsive table-striped">
-              <thead class="thead-dark">
-                <tr>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-3">Name</th>
-                  <th scope="" class="col-sm-2">Price</th>
-                  <th scope="" class="col-sm-1">Quantity</th>
-                  <th scope="" class="col-sm-3">Total</th>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-1"></th>
-                </tr>
-              </thead>
-
-
-              <tbody>
+             
                 <!-- WHILE LOOP -->
                 <?php
                 $num = 1;
                 $total = 0;
-                if ($products !== null && mysqli_num_rows($products) > 0) {
-                  while ($row = mysqli_fetch_array($products)) { ?>
+                if ($products !== null && mysqli_num_rows($products) > 0) { ?>
+                  <thead class="thead-dark">
+                  <tr>
+                    <th scope="" class="col-sm-1"></th>
+                    <th scope="" class="col-sm-3">Name</th>
+                    <th scope="" class="col-sm-2">Price</th>
+                    <th scope="" class="col-sm-1">Quantity</th>
+                    <th scope="" class="col-sm-3">Total</th>
+                    <th scope="" class="col-sm-1"></th>
+                    <th scope="" class="col-sm-1"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                
+               <?php   while ($row = mysqli_fetch_array($products)) { ?>
 
                     <tr>
                       <td>
