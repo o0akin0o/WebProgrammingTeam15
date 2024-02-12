@@ -25,13 +25,9 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 <body>
     <div class="container mx-auto my-4">
         <?php include 'header.php'; ?>
-        <?php include('login_nav.php'); ?>
+        <?php include('second_nav.php'); ?>
         <!-- SEARCH & SORT FOOD BY PRICE -->
-        <!-- MY CART -->
-
-        <div class="container mx-auto my-4">
-            <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
-        </div>
+       
 
         <div class="container">
 

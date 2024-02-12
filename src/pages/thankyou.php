@@ -12,7 +12,7 @@
 
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
-            <?php include('login_nav.php'); ?>
+            <?php include('second_nav.php'); ?>
             <!-- END OF NAV BAR -->
 <div class="booking">
     <div class="row">

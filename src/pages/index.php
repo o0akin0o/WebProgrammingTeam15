@@ -15,7 +15,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
-            <?php include ('login_nav.php'); ?>
+            <?php include ('second_nav.php'); ?>
             <!-- END OF NAV BAR -->
 
             

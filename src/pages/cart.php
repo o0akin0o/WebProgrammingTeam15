@@ -160,12 +160,9 @@ if (!empty($_SESSION['cart'])) {
 <body>
   <div class="container mx-auto my-4">
     <?php include 'header.php'; ?>
-    <?php include 'login_nav.php'; ?>
-    <!-- MY CART -->
+    <?php include 'second_nav.php'; ?>
 
-    <div class="container mx-auto my-4">
-      <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart (1)</i></a>
-    </div>
+
     <div class="container">
 
       <!-- FORM -->

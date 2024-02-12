@@ -1,9 +1,4 @@
-<?php include('links.php');?>
-<div class="container">
-<div class="container">
-    <div class="row justify-content-end">
-        <div class="col-md-auto">
-            <div class="container mx-auto my-4 login_nav">
+
             <?php
                 $loggedIn = isset($_COOKIE["name"]);
                 if ($loggedIn) {
@@ -18,8 +13,3 @@
                
                 }
             ?>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
