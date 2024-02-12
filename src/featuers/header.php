@@ -26,23 +26,18 @@
 
                     <ul>
                         <li>
-                        <a class="nav-link" href="ex1.php">Exe1</a>
+                        <a class="nav-link" href="home.php">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex2.php">Exe2</a>
+                            <a class="nav-link" href="ex2.php">Menu</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex3.php">Exe3</a>
+                            <a class="nav-link" href="bookin.php">Booking</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="ex4.php">Exe4</a>
+                            <a class="nav-link" href="ex4.php">About</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="readme.md">Exe5</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="crud_ex7">Exe7</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </nav>
