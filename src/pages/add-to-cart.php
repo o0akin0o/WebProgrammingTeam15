@@ -1,17 +1,4 @@
-<?php
-// check user login by cookie
-$loggedIn = isset($_COOKIE["name"]);
-
-// Thiết lập biến link tùy thuộc vào trạng thái đăng nhập của người dùng
-if ($loggedIn) {
-    $link = 'menu.php'; // if login then load menu page again
-} else {
-    $link = 'login.php'; // if not login then redirect to login page
-}
-?>
-<?php $prevPage = $_SERVER['REQUEST_URI'];
-setcookie("prev_page", $prevPage, time() + 3600, "/");
-?>
+<?php include('./features/login_check.php');?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,77 +103,12 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
                 <?php include 'footer.php'; ?>
             </div> <!-- END OF CONTAINER -->
-
-
         </div><!-- END OF CONTAINER -->
-        
-
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
             </script>
-  <script>
-        $(document).ready(function () {
-           
-            $('.quick-buy-form').submit(function (e) {
-                
-                e.preventDefault();
-                alert('Submitted form');
-               
-                var formData = $(this).serialize();
-
-                // $.ajax({
-                //     type: 'POST',
-                //     url: $(this).attr('action'), 
-                //     data: formData, 
-                //     success: function (response) {
-                //         response = JSON.parse(response);
-                //         if(response.status == 0){
-                //             alert(response.message);
-                //         } else (
-                //             alert(response.message);
-                //             location.reload();
-                //         )
-                       
-                //     }
-                // });
-            });
-        });
-    </script> 
-<script>
-        $(document).ready(function () {
-            // Intercept the form submission
-            $('#myForm').submit(function (e) {
-                // Prevent the default form submission
-                e.preventDefault();
-
-                // Serialize the form data
-                var formData = $(this).serialize();
-
-                // Send an AJAX request
-                $.ajax({
-                    type: 'POST',
-                    url: $(this).attr('action'), // URL to submit the form data to
-                    data: formData, // Form data to be submitted
-                    success: function (response) {
-                        // Display the response from the server
-                        $('#response').html(response);
-                    }
-                });
-            });
-        });
-    </script>
 
 </body>
-
 </html>
