@@ -108,15 +108,15 @@
                     <fieldset>
                       <div class="form-group">
                         <label for="" class="p-2">Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Name" name="name">
+                        <input type="text" id="name" class="form-control" placeholder="Name" name="name" required>
                       </div>
                       <div class="form-group">
                         <label for="" class="p-2">Phone</label>
-                        <input type="text" id="phone" class="form-control" placeholder="Phone" name="phone">
+                        <input type="text" id="phone" class="form-control" placeholder="Phone" name="phone" required>
                       </div>
                       <div class="form-group">
                         <label for="" class="p-2">Address</label>
-                        <input type="text" id="address" class="form-control" placeholder="123 Lesmurine" name="address">
+                        <input type="text" id="address" class="form-control" placeholder="123 Lesmurine" name="address" required>
                       </div>
 
                       <div class="form-group">
