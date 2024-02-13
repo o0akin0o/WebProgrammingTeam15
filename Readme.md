@@ -36,15 +36,15 @@ Feature for customers to book table.
 Feature for customers to place orders online. 
 - Links github:
   - Menu Page Features:
-    + [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-    + Search and Sort : [Search-Sort](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
-    + Process cart:  [Process-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
+    + Menu Page:               [Menu Page - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+    + Search and Sort :        [Search-Sort](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
+    + Process cart:            [Process-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
   - Cart Page Features:  
-    + [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
-    + Update/Delete items and Complete orders: [Update-Delete-Complete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
+    + Cart Page:               [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+    + Update/Delete/Complete:  [Update-Delete-Complete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
   - Item Details Features:
-    + [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
-    + Add item to cart and see item details: [Add-To-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
+    + AddToCart Page:          [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
+    + Add item/item details:   [Add-To-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
 
 - Link to the feature (shell.hamk.fi):
   + [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
