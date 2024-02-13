@@ -5,10 +5,6 @@ session_start();
 // Include the database connection file
 include 'db_connection.php';
 
-
-
-
-
 $products = null;
 if (!isset($_SESSION['cart'])) {
   $_SESSION['cart'] = array();
@@ -82,6 +78,9 @@ if (isset($_GET['action'])) {
 
           if (!isset($_COOKIE["name"])) {
             // Redirect to login if customer ID is not set
+            echo "<script>alert('Please login first.');</script>";
+            // Redirect to login page after the alert
+            echo "<script>window.location = 'login.php';</script>";
             header("Location: login.php");
             exit;
           } else {
