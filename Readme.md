@@ -17,7 +17,7 @@ Our website, Eastern Kitchen Restaurant, offers both online ordering and table r
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
 - [ ] Feature 1 (Sonali Mitua): Booking. 
-- [ ] Feature 2 (Dan Le): Orders. Add To Cart. Search / Sort for Menu Page. Index Page. Thank you Page.
+- [ ] Feature 2 (Dan Le): Orders Online. Add To Cart. Search / Sort for Menu Page. Index Page. Thank you Page.
 - [ ] Feature 3 (Quan Le):Log In/ Log Out.
 - [ ] Feature 4 (Phuong Le):Admin management: Report, update, delete information.
 - [ ] Feature 5 (Quan Le): Menu Page
@@ -35,9 +35,17 @@ Feature for customers to book table.
 
 Feature for customers to place orders online. 
 - Links github:
-  + [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-  + [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
-  + [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+  - Menu Page Features:
+    + [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+    + Search and Sort : [Search-Sort](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
+    + Process cart:  [Process-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
+  - Cart Page Features:  
+    + [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+    + Update/Delete items and Complete orders: [Update-Delete-Complete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
+  - Item Details Features:
+    + [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
+    + Add item to cart and see item details: [Add-To-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
+
 - Link to the feature (shell.hamk.fi):
   + [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
   + [AddToCart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
