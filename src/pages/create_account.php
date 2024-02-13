@@ -6,7 +6,7 @@
     <title>Create Account</title>
     <style>
         .row {
-            margin-bottom: 21px; /* Khoảng cách giữa các dòng */
+            margin-bottom: 21px; 
         }
 
         input {

@@ -10,8 +10,7 @@
                     echo '<span class="p-3 link-success">Welcome, ' . $_COOKIE['name'] . '</span>';
                     echo '<a id="logout" class="p-3 link-secondary" href="logout.php"><i class="fa fa-sign-out">Logout</i></a>';
                 } else {
-                //<a id="login" class="p-3 link-success" href="login.php"><i class="fa sign-in">Login</i></a>
-                //<a id="logout" class="p-3 link-secondary" href="logout.php"><i class="fa fa-sign-out">Logout</i></a>
+            
                 echo '<a id="login" class="p-3 link-success" href="login.php"><i class="fa sign-in">Login</i><span class="p-1"></span><i class="fa-solid fa-right-to-bracket "></i></a>';
                 }
             ?>

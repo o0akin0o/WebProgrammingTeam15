@@ -2,7 +2,7 @@
 // check user login by cookie
 $loggedIn = isset($_COOKIE["name"]);
 
-// Thiết lập biến link tùy thuộc vào trạng thái đăng nhập của người dùng
+
 if ($loggedIn) {
     $link = 'menu.php'; // if login then load menu page again
 } else {

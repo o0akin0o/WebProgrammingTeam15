@@ -1,8 +1,8 @@
 <?php
 include 'db_connection.php';
-// Kiểm tra nếu người dùng đã gửi form
+// CHECK IF USER SUBMIT
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Lấy dữ liệu từ form đăng nhập
+    // GET USER INPUT
     $email = $_POST["email"];
     $password = $_POST["password"];
     $sql = "SELECT * FROM Customers where email='$email'";
@@ -10,15 +10,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $row = $result->fetch_assoc();
     $passwddb= $row["password"];
     $name= $row["name"];
-    // Kiểm tra thông tin đăng nhập
+    // CHECK INPUT INFO
     if ($passwddb==$password) {
-        // Nếu đăng nhập thành công, thiết lập cookie và chuyển hướng đến trang chính
-        setcookie("name", $name, time() + (86400 * 30), "/"); // Cookie có hiệu lực trong 30 ngày
+        // IF LOG IN SUCESSFULLY, REDIRECT
+        setcookie("name", $name, time() + (86400 * 30), "/"); // COOKIE VALIDS IN 30 DAYS
         $prevPage = $_COOKIE['prev_page'];
         header("Location: $prevPage");
         exit;
     } else {
-        // Nếu đăng nhập không thành công, hiển thị thông báo lỗi
+        // LOG IN FAIL, SHOWS MESSAGE
         $error_message = "Invalid username or password.";
     }
 }
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Create Account</title>
     <style>
         .row {
-            margin-bottom: 21px; /* Khoảng cách giữa các dòng */
+            margin-bottom: 21px; 
         }
 
         input {

@@ -5,10 +5,6 @@ session_start();
 // Include the database connection file
 include 'db_connection.php';
 
-
-
-
-
 $products = null;
 if (!isset($_SESSION['cart'])) {
   $_SESSION['cart'] = array();
