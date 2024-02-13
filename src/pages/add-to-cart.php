@@ -26,12 +26,8 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     <div class="container mx-auto my-4">
         </span></a></p>
         <?php include 'header.php'; ?>
-        <?php include('login_nav.php'); ?>
-        <!-- MY CART -->
-
-        <div class="container mx-auto my-4">
-            <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart</i></a>
-        </div>
+        <?php include('second_nav.php'); ?>
+  
         <div class="container">
             <?php
             require_once('db_connection.php');

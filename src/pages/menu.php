@@ -2,7 +2,7 @@
 // check user login by cookie
 $loggedIn = isset($_COOKIE["name"]);
 
-
+// Thiết lập biến link tùy thuộc vào trạng thái đăng nhập của người dùng
 if ($loggedIn) {
     $link = 'menu.php'; // if login then load menu page again
 } else {
@@ -25,40 +25,10 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 <body>
     <div class="container mx-auto my-4">
         <?php include 'header.php'; ?>
-        <?php include('login_nav.php'); ?>
-        <!-- SEARCH & SORT FOOD BY PRICE -->
-        <!-- MY CART -->
-
-        <div class="container mx-auto my-4">
-            <a id="cart" class="link-success" href="cart.php"><i class="fa-solid fa-cart-shopping">My Cart</i></a>
-        </div>
-
-        <div class="container">
+        <?php include('second_nav.php'); ?>
+        <?php include('./features/search_sort.php'); ?>
 
 
-            <div class="row mt-2">
-                <div class="col-sm-3 col-md-3">
-                    <form action="" method="GET">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Your dishes" aria-label="Search"
-                                aria-describedby="button-addon2" name="name">
-                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
-
-                        </div>
-                    </form>
-                </div>
-                <div class="col-sm-7 col-md-7"></div>
-                <div id="filter-box" class="col-sm-2 col-md-2">
-                    <select id="sort-box" class="form-select" aria-label="Default select example"
-                        onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                        <option selected>Price Sorting</option>
-                        <option value="?field=price&sort=asc">Ascending</option>
-                        <option value="?field=price&sort=desc">Descending</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <!-- END SEARCH & SORTING PRICE -->
         <div class="container">
             <form action="" class="quick-buy-form" method="post">
                 <div class="row my-4 mt-4">
@@ -100,7 +70,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
      
                                 // FORM
                                
-                                echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
+                                echo '<form class="quick-buy-form" action="./features/process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
                                 
                                 echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>'; 
@@ -801,7 +771,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 
                 $.ajax({
                     type: 'POST',
-                    url: './process_cart.php?action=add', // Corrected URL
+                    url: './features/process_cart.php?action=add', // Corrected URL
                     data: formData,
                     success: function (response) {
                         
