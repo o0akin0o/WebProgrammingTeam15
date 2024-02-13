@@ -67,7 +67,7 @@ Feature for customers to book table.
 
 - **Thank You Page**: 
   - GitHub: [Thank You - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/thankyou.php)
- - Demo: [Thank You - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/thankyou.php)
+  - Demo: [Thank You - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/thankyou.php)
    
 ### Feature 3
 
