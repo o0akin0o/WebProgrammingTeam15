@@ -25,7 +25,7 @@
         }
     </style>
     <div class="row my-4 mt-4">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <ul class="social-icons">
                         <li>
                             <a href="https://www.facebook.com/" target="_blank" title="Visit our Facebook page">
@@ -45,13 +45,13 @@
                         <!-- Add more social icons as needed -->
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <p>Opening Hours</p>
                     <span>Sunday-Friday</span>
                     <p>9AM - 9PM</p>
 
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-4">
                     <p>Address:</p>
                     <span>123 Lesmurine, 13100</span>
                     <p>Phone: 514-123-4567</p>

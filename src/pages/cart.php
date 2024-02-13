@@ -23,13 +23,13 @@
                 ?>
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="" class="col-sm-1"></th>
-                    <th scope="" class="col-sm-3">Name</th>
-                    <th scope="" class="col-sm-2">Price</th>
-                    <th scope="" class="col-sm-1">Quantity</th>
-                    <th scope="" class="col-sm-3">Total</th>
-                    <th scope="" class="col-sm-1"></th>
-                    <th scope="" class="col-sm-1"></th>
+                    <th scope="" class="col-sm-1 col-md-1"></th>
+                    <th scope="" class="col-sm-3 col-md-3 col-sm-3">Name</th>
+                    <th scope="" class="col-sm-2 col-md-2 col-sm-2">Price</th>
+                    <th scope="" class="col-sm-1 col-md-1">Quantity</th>
+                    <th scope="" class="col-sm-3 col-md-3 col-sm-3">Total</th>
+                    <th scope="" class="col-sm-1 col-md-1"></th>
+                    <th scope="" class="col-sm-1 col-md-1"></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -97,13 +97,13 @@
           <?php } ?>
           <div class="booking">
             <div class="row">
-              <div class="col-md-5"></div>
-              <div class="col-md-2">
+              <div class="col-md-5 col-sm-5"></div>
+              <div class="col-md-2 col-sm-2">
                 <h3 class="booking-title">Contact Information</h3>
               </div>
               <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-3 col-sm-3"></div>
+                <div class="col-md-6 col-sm-6">
                   <form id="cart-form" action="cart.php?action=submit">
                     <fieldset>
                       <div class="form-group">
@@ -128,7 +128,7 @@
                       </div>
                     </fieldset>
                   </form>
-                  <div class="col-md-3"></div>
+                  <div class="col-md-3 col-sm-3"></div>
                 </div>
               </div>
             </div>
