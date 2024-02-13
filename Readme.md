@@ -33,23 +33,35 @@ Feature for customers to book table.
 
 ### Feature 2
 
-Feature for customers to place orders online. 
-- Links github:
-  - Menu Page Features:
-    + Menu Page:               [Menu Page - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-    + Search and Sort :        [Search-Sort](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
-    + Process cart:            [Process-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
-  - Cart Page Features:  
-    + Cart Page:               [Cart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
-    + Update/Delete/Complete:  [Update-Delete-Complete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
-  - Item Details Features:
-    + AddToCart Page:          [AddToCart - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
-    + Add item/item details:   [Add-To-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
+## Menu Page Features
 
-- Link to the feature (shell.hamk.fi):
-  + [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
-  + [AddToCart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
-  + [Cart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
+- **Menu Page**: 
+  - GitHub: [Menu Page - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+  - Demo: [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+
+- **Search and Sort**: 
+  - GitHub: [Search-Sort - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
+
+- **Process Cart**: 
+  - GitHub: [Process-Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
+
+## Cart Page Features
+
+- **Cart Page**: 
+  - GitHub: [Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+  - Demo: [Cart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
+
+- **Update/Delete/Complete**: 
+  - GitHub: [Update-Delete-Complete - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
+
+## Item Details Features
+
+- **AddToCart Page**: 
+  - GitHub: [AddToCart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
+  - Demo: [AddToCart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
+
+- **Add item/item details**: 
+  - GitHub: [Add-To-Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
 
 ### Feature 3
 
