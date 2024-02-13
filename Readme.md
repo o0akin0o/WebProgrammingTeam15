@@ -33,7 +33,7 @@ Feature for customers to book table.
 
 ### Feature 2
 
-## Menu Page Features
+#### Menu Page Features
 
 - **Menu Page**: 
   - GitHub: [Menu Page - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
@@ -45,7 +45,7 @@ Feature for customers to book table.
 - **Process Cart**: 
   - GitHub: [Process-Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
 
-## Cart Page Features
+#### Cart Page Features
 
 - **Cart Page**: 
   - GitHub: [Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
@@ -54,7 +54,7 @@ Feature for customers to book table.
 - **Update/Delete/Complete**: 
   - GitHub: [Update-Delete-Complete - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
 
-## Item Details Features
+#### Item Details Features
 
 - **AddToCart Page**: 
   - GitHub: [AddToCart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
