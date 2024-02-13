@@ -1,29 +1,17 @@
-<?php include('./features/login_check.php');?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include('links.php'); ?>
-    <title>Restaurant</title>
-</head>
+<?php include('./features/login_check.php'); ?>
+<?php include('top_header.php'); ?>
 
 <body>
     <div class="container mx-auto my-4">
         <?php include 'header.php'; ?>
         <?php include('second_nav.php'); ?>
         <?php include('./features/search_sort.php'); ?>
-
-
         <div class="container">
             <form action="" class="quick-buy-form" method="post">
                 <div class="row my-4 mt-4">
                     <h1 class="heading">Salads</h1>
                 </div>
-
                 <?php
-
                 // SALADS
                 include 'db_connection.php';
                 $sql = "SELECT id, img_path, name, description, price FROM Products where category='Salads'";
@@ -50,25 +38,17 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-
-                                 // ADD TO CART 
-     
+                                // ADD TO CART 
                                 // FORM
-                               
                                 echo '<form class="quick-buy-form" action="./features/process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
-                                
-                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>'; 
+                                echo '<input type="submit" class="quick-buy-form btn btn-outline-success" value="+"></input>';
                                 echo '<span class="m-1"></span>';
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
-                
-
                                 echo '</div>';
                                 echo '</div>';
                                 echo '<div class="col-sm-1 col-md-1"></div>';
@@ -81,11 +61,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-                                
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -94,7 +71,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -128,7 +104,6 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-                                
                                 echo '<div class="card-body">';
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
@@ -150,11 +125,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -163,7 +135,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -196,11 +167,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -209,7 +177,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -223,11 +190,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -236,7 +200,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -252,15 +215,12 @@
                     } else {
                         // echo 'No menu items available.';
                     }
-
-
                 }
 
                 // close connection
                 $conn->close();
                 ?>
                 <!-- END OF SALADS -->
-
                 <!-- MAIN DISHES -->
                 <div class="row my-4 mt-4">
                     <h1 class="heading">Main Dishes</h1>
@@ -289,11 +249,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -302,7 +259,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -316,11 +272,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -329,7 +282,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -363,11 +315,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -376,7 +325,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -390,11 +338,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -403,7 +348,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -419,8 +363,6 @@
                     } else {
                         // echo 'No menu items available.';
                     }
-
-
                 } else {
                     if ($result->num_rows > 0) {
                         $count = 1;
@@ -436,11 +378,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -449,7 +388,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -463,11 +401,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -476,7 +411,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -492,8 +426,6 @@
                     } else {
                         echo 'No menu items available.';
                     }
-
-
                 }
 
                 // close connection
@@ -503,7 +435,6 @@
                     <h1 class="heading">Sweets</h1>
                 </div>
                 <!-- END OF MAIN DISHES -->
-
                 <!-- SWEETS -->
                 <?php
                 include 'db_connection.php';
@@ -529,11 +460,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -542,7 +470,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -556,11 +483,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -569,7 +493,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -603,11 +526,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -616,7 +536,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -631,9 +550,7 @@
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<p class="">' . $row['price'] . '$</p>';
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -642,7 +559,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -658,8 +574,6 @@
                     } else {
                         // echo 'No menu items available.';
                     }
-
-
                 } else {
                     if ($result->num_rows > 0) {
                         $count = 1;
@@ -675,11 +589,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -688,7 +599,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -702,11 +612,8 @@
                                 echo '<h3 class="mb-3">' . $row['name'] . '</h3>';
                                 echo '<p class="">' . $row['description'] . '</p>';
                                 echo '<h5 class="">' . $row['price'] . '$</h5>';
-
                                 echo '<div class="card-body">';
-                                  // ADD TO CART 
-   
-                
+                                // ADD TO CART 
                                 // FORM
                                 echo '<form class="quick-buy-form" action="process_cart.php?action=add" method="post" >';
                                 echo '<input type="hidden" qty="' . $row['id'] . '" value="1" name="qty[' . $row['id'] . ']"></input>';
@@ -715,7 +622,6 @@
                                 echo '<a href="add-to-cart.php?id=' . $row['id'] . '" class="btn btn-primary">Details</a>';
                                 echo '</form>';
                                 // END FORM
-                
                                 // END ADD TO CART 
                                 echo '</div>';
                                 echo '</div>';
@@ -731,10 +637,7 @@
                     } else {
                         echo 'No menu items available.';
                     }
-
-
                 }
-
                 // close connection
                 $conn->close();
                 ?>
@@ -742,8 +645,7 @@
         </div> <!-- END OF CONTAINER -->
         </form>
     </div><!-- END OF CONTAINER -->
-    <?php include ('footer_script.php'); ?>
-
+    <?php include('footer_script.php'); ?>
     <script>
         $(document).ready(function () {
 
@@ -758,16 +660,14 @@
                     url: './features/process_cart.php?action=add', // Corrected URL
                     data: formData,
                     success: function (response) {
-                        
+
                         alert('Dish added successfully');
-                       
+
                     }
                 });
             });
         });
     </script>
-
-
 </body>
 
 </html>

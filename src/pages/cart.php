@@ -1,62 +1,40 @@
-<?php
-include("./features/cart_feature.php");
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <?php include('links.php') ?>
-  <title>Restaurant</title>
-</head>
+<?php include("./features/cart_feature.php"); ?>
+<?php include('top_header.php'); ?>
 
 <body>
   <div class="container mx-auto my-4">
     <?php include 'header.php'; ?>
     <?php include 'second_nav.php'; ?>
-
-
     <div class="container">
 
       <!-- FORM -->
       <form action='cart.php?action=submit' method='post'>
-
         <div class="form-group row">
           <div class="jumbotron row mx-auto my-4">
             <h1 class="display-4">My Cart</h1>
             <hr class="my-4">
             <table class="table table-bordered table-responsive table-striped">
-             
-                <!-- WHILE LOOP -->
-                <?php
-                $num = 1;
-                $total = 0;
-                if ($products !== null && mysqli_num_rows($products) > 0) { 
-                
-                
-                
+
+              <!-- WHILE LOOP -->
+              <?php
+              $num = 1;
+              $total = 0;
+              if ($products !== null && mysqli_num_rows($products) > 0) {
                 ?>
-                 <thead class="thead-dark">
-                <tr>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-3">Name</th>
-                  <th scope="" class="col-sm-2">Price</th>
-                  <th scope="" class="col-sm-1">Quantity</th>
-                  <th scope="" class="col-sm-3">Total</th>
-                  <th scope="" class="col-sm-1"></th>
-                  <th scope="" class="col-sm-1"></th>
-                </tr>
-              </thead>
-
-
-              <tbody>
-                <?php
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="" class="col-sm-1"></th>
+                    <th scope="" class="col-sm-3">Name</th>
+                    <th scope="" class="col-sm-2">Price</th>
+                    <th scope="" class="col-sm-1">Quantity</th>
+                    <th scope="" class="col-sm-3">Total</th>
+                    <th scope="" class="col-sm-1"></th>
+                    <th scope="" class="col-sm-1"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php
                   while ($row = mysqli_fetch_array($products)) { ?>
-
                     <tr>
                       <td>
                         <?= $num; ?>
@@ -98,54 +76,31 @@ include("./features/cart_feature.php");
                   </tr>
                 </tbody>
               </table>
-
               <?php
-
-                } else {
-
-                  echo "Your cart is empty.";
-                } ?>
-
-
-
-
+              } else {
+                echo "Your cart is empty.";
+              } ?>
             <!-- END WHILE LOOP -->
-
-
             <div class="submit-booking">
-
               <a href="menu.php" class="btn btn-success"><i class="fa-solid fa-cart-plus"></i>Continue
                 Shopping</a>
             </div>
-
           </div>
-
-
-
-
-
           <!-- END FORM -->
           <!-- END CART -->
-
-
-
           <!-- CUSTOMER DETAIL FORM -->
           <?php if (!empty($error)) { ?>
             <div id="notify-msg">
               <?= $error ?>. <a href="menu.php">Continue Shopping</a>
             </div>
           <?php } else { ?>
-
           <?php } ?>
           <div class="booking">
             <div class="row">
               <div class="col-md-5"></div>
               <div class="col-md-2">
                 <h3 class="booking-title">Contact Information</h3>
-
               </div>
-
-
               <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -175,27 +130,14 @@ include("./features/cart_feature.php");
                   </form>
                   <div class="col-md-3"></div>
                 </div>
-
               </div>
             </div>
-
           </div>
-
-
           <!-- END OF CUSTOMER DETAIL FORM  -->
-
-
-
-
-
-
         </div>
-
-
         <?php include 'footer.php'; ?>
     </div><!-- END OF CONTAINER -->
-    <?php include ('footer_script.php'); ?>
-
+    <?php include('footer_script.php'); ?>
 </body>
 
 </html>

@@ -1,30 +1,17 @@
 <?php $prevPage = $_SERVER['REQUEST_URI'];
 setcookie("prev_page", $prevPage, time() + 3600, "/");
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <?php include ('links.php'); ?>
-        <title>Restaurant</title>
-    </head>
+<?php include('top_header.php'); ?>
     <body>
-        
         <div class="container mx-auto my-4">
-
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
             <?php include ('second_nav.php'); ?>
             <!-- END OF NAV BAR -->
-
-            
             <div class="container">
-                
                 <div class="row my-4 mt-4">
                     <h1 class="heading">A genuine fine-dining experience awaits</h1>
                 </div>
-                
                 <!-- CARD ROW 1 -->
                 <div class="row my-4 mt-4">
                     <div class="row card-container">
@@ -174,8 +161,6 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                 </div>
               </div><!-- END OF BANNER 2-->
             </div> <!-- END OF CONTAINER -->
-           
-           
             <?php include ('footer.php'); ?>
         </div><!-- END OF CONTAINER -->
         <?php include ('footer_script.php'); ?>
