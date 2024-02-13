@@ -54,9 +54,6 @@ if (isset($_GET['action'])) {
       break;
     case "submit":
 
-
-
-
       if (isset($_POST['update_click'])) {
         update_cart();
         header('Location: ./cart.php');

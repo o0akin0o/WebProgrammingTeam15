@@ -108,15 +108,15 @@
                     <fieldset>
                       <div class="form-group">
                         <label for="" class="p-2">Name</label>
-                        <input type="text" id="" class="form-control" placeholder="Name" name="name">
+                        <input type="text" id="name" class="form-control" placeholder="Name" name="name">
                       </div>
                       <div class="form-group">
                         <label for="" class="p-2">Phone</label>
-                        <input type="text" id="" class="form-control" placeholder="Phone" name="phone">
+                        <input type="text" id="phone" class="form-control" placeholder="Phone" name="phone">
                       </div>
                       <div class="form-group">
                         <label for="" class="p-2">Address</label>
-                        <input type="text" id="" class="form-control" placeholder="123 Lesmurine" name="address">
+                        <input type="text" id="address" class="form-control" placeholder="123 Lesmurine" name="address">
                       </div>
 
                       <div class="form-group">
@@ -124,7 +124,7 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="note"></textarea>
                       </div>
                       <div class="submit-booking">
-                        <input type="submit" class="btn btn-primary" value="Complete Order" name="order_click"></input>
+                        <input id="complete_order" type="submit" class="btn btn-primary" value="Complete Order" name="order_click"></input>
                       </div>
                     </fieldset>
                   </form>
@@ -141,3 +141,7 @@
 </body>
 
 </html>
+
+
+
+
