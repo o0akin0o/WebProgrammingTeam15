@@ -89,6 +89,7 @@ In this section, list and describe the features or functionality that you are wo
   - 🐚 Demo:    [Admin](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
 
 - **Update/Delete/Complete**:
+
   - 🔗 GitHub:  [Update & Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
   
 #### Report Page Feature
@@ -98,25 +99,27 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 5
 
-- **Menu Page**:
+#### Menu Page Features
+
   - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
   - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
   - 
 - **Load Products**:
+  
   - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
   - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 
 ### Feature 6
 
-- **Create Account**:
+#### Create Account Features
 
- - 🔗 GitHub:[Create Account](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
- - 🐚 Demo:  [Create Account](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
+  - 🔗 GitHub:[Create Account](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+  - 🐚 Demo:  [Create Account](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
   
 - **Customer Profile**:
   
- - 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
- - 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
+  - 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
+  - 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
   
 ## 🔠 Database Tables
 
