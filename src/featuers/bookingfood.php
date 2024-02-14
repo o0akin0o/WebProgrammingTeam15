@@ -23,11 +23,6 @@
         <input type="submit" value="Submit Feedback">
     </form>
 
-    <h2>Opening Hours</h2>
-    <p>Sunday-Friday: 9AM-9PM</p>
-    <h2>Address</h2>
-    <p>123 Lesmurine, 13100</p>
-    <p>Phone: 514-123-4567</p>
-    <p>Last modified: February 1, 2024 22:19:48</p>
+    
 </body>
 <?php include 'footer.php'; ?>
