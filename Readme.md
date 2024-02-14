@@ -159,13 +159,13 @@ List and describe any forms that have been created as part of your project. Incl
     + Validation: The user must log in before completing the order. All contact form fields are required. The cart must not be empty before completing orders.
  
 - 4️⃣ Form 4: (Created By Phuong Le):
- - Form Name: Update Order
-   + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
-   + [Shell](http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
-   + The form allows the admin to view, update orders, delete order
-   + Form(s) with JavaScript validation: User must fill in information in the required field: Name, total order, status, order's note
-   + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet 
-     the requirements."
+  - Form Name: Update Order
+    + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
+    + [Shell](http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
+    + The form allows the admin to view, update orders, delete order
+    + Form(s) with JavaScript validation: User must fill in information in the required field: Name, total order, status, order's note
+    + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet 
+      the requirements."
 
 
 ## 🗄️ Created Tables
