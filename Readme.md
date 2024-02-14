@@ -106,9 +106,8 @@ List the database tables that are part of your project.
 - Table 2,3 (Created By Quan Le): Customers, Products
 - Table 4,5 (Created By Dan Le): Order, Order_detail
 - Table 6 (Created By Phuong Le): Admin
-> Include the ER Diagram of the database. 
-
-![table](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/90eebd1b-2e85-4ee3-a660-1c3ababb2f83)
+> Include the ER Diagram of the database.
+> 
 ![image](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/8edb57b7-fb99-4b00-8aee-05d82b6ee922)
 
 
