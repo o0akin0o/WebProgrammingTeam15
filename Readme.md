@@ -103,8 +103,9 @@ Features for customers to create account and track their orders/booking/profile.
 List the database tables that are part of your project. 
 
 - Table 1 (Created By Sonali Mitua): Booking
-- Table 2 (Created By Quan Le): Customers, Products
-- Table 3 (Created By Dan Le): Order, Order_detail
+- Table 2,3 (Created By Quan Le): Customers, Products
+- Table 4,5 (Created By Dan Le): Order, Order_detail
+- Table 6 (Created By Phuong Le): Admin
 > Include the ER Diagram of the database. 
 
 ![table](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/90eebd1b-2e85-4ee3-a660-1c3ababb2f83)
@@ -126,7 +127,7 @@ List and describe any forms that have been created as part of your project. Incl
  
    
 - Form 4: (Created By Phuong Le):  Form Name: Update Order [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
-  | [shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
+  |[shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
     + The form allows admin to view, update orders, delete order
     + Form(s) with JavaScript validation: User must fill information in required field: Name, total order, status, order's note
     + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet the requirements."
@@ -140,7 +141,7 @@ List any tables that you have created in the project work
 - Table 1 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 2 (Created By): Table Name | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Created By Dan Le): Order, Order_Details | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-
+- Table 5 (Created By Phuong Le): Admin | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 ---
 
 
