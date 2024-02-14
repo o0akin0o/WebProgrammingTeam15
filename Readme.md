@@ -4,7 +4,13 @@
 
 Our website, Eastern Kitchen Restaurant, offers both online ordering and table reservations for customers.
 
-## Table of Contents
+# DEMO 
+![DEMO](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHk2N2Y4YWFqMDZhcHkwbDEwZGo2bDY0amp3YWUzZm5qNmNpaWhreCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XsVRqNvcV1vzZpeAo8/giphy.gif)
+
+# 💻Tech Stack
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
+## Table of Contents :
 - [Features](#features)
 - [Database Tables](#database-tables)
 - [Created Forms](#created-forms)
@@ -25,79 +31,94 @@ In this section, list and describe the features or functionality that you are wo
 
 ### Feature 1
 
-Feature for customers to book table.
--Links github:
-+ [booking - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/bookingfood.php)
-- Link to the feature (shell.hamk.fi) :
-    + [booking - shell.hamk.fi](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/bookingfood.php)
+#### Booking Page Features
+- **Booking Page**: 
+   - 🔗 GitHub:[Booking](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/bookingfood.php)
+   - 🐚 Demo:  [Booking](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/bookingfood.php)
 
 ### Feature 2
 
 #### Menu Page Features
 
 - **Menu Page**: 
-  - GitHub: [Menu Page - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-  - Demo: [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+  - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+  - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 
 - **Search and Sort**: 
-  - GitHub: [Search-Sort - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
+  - 🔗 GitHub: [Search-Sort](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/search_sort.php)
 
 - **Process Cart**: 
-  - GitHub: [Process-Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
+  - 🔗 GitHub: [Process-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/process_cart.php)
 
 #### Cart Page Features
 
 - **Cart Page**: 
-  - GitHub: [Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
-  - Demo: [Cart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
+  - 🔗 GitHub: [Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+  - 🐚 Demo:   [Cart](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php)
 
 - **Update/Delete/Complete**: 
-  - GitHub: [Update-Delete-Complete - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
+  - 🔗 GitHub: [Update-Delete-Complete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/cart_feature.php)
 
 #### Item Details Features
 
 - **AddToCart Page**: 
-  - GitHub: [AddToCart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
-  - Demo: [AddToCart - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
+  - 🔗 GitHub: [Add To Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/add-to-cart.php)
+  - 🐚 Demo:   [Add To Cart](http://shell.hamk.fi/~bbcap23_15/src/pages/add-to-cart.php?id=1)
 
 - **Add item/item details**: 
-  - GitHub: [Add-To-Cart - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
+  - 🔗 GitHub: [Add-To-Cart](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/features/add_to_cart_feature.php)
 
 #### Thank You Page Feature
 
 - **Thank You Page**: 
-  - GitHub: [Thank You - GitHub](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/thankyou.php)
-  - Demo: [Thank You - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/thankyou.php)
+  - 🔗 GitHub: [Thank You](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/thankyou.php)
+  - 🐚 Demo:   [Thank You](http://shell.hamk.fi/~bbcap23_15/src/pages/thankyou.php)
    
 ### Feature 3
 
-Features for customers to log in, Logout your Account. 
-- [Login - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php)
-- [Login - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/login.php)
+#### Log In/ Log Out Page Feature
+
+  - 🔗 GitHub: [Login](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php)
+  - 🐚 Demo:   [Login](http://shell.hamk.fi/~bbcap23_15/src/pages/login.php)
 
 ### Feature 4
 
-Features for admin to make reports for the restaurant: income, numbers of customers, bookings, orders.
-Features to update information, delete information.
- - Links github:
-   + [Admin - report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
-   + [Admin - update & delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
--  Links to the feature (shell.hamk.fi):
-    + [Admin-report- shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
-    + [Admin - update & delete](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
+#### Admin Page Feature
+
+ - 🔗 GitHub:  [Admin](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+ - 🐚 Demo:    [Admin](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
+
+- **Update/Delete/Complete**:
+ - 🔗 GitHub:  [Update & Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+  
+#### Report Page Feature
+
+ - 🔗 GitHub: [Report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
+ - 🐚 Demo:   [Report](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
+
 
 ### Feature 5
 
-Features for load products from database. 
-- [Menu - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
-- [Menu - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+- **Menu Page**:
+  - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+  - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
+  - 
+- **Load Products**:
+  - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
+  - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 
 ### Feature 6
 
-Features for customers to create account and track their orders/booking/profile. 
-- [Create Account - Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
-- [Create Account - shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
+- **Create Account**:
 
+- 🔗 GitHub:[Create Account](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+- 🐚 Demo:  [Create Account](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
+  
+- **Customer Profile**:
+  
+- 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
+- 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
+  
 ## Database Tables
 
 List the database tables that are part of your project. 
