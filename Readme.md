@@ -109,6 +109,8 @@ List the database tables that are part of your project.
 > Include the ER Diagram of the database. 
 
 ![table](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/90eebd1b-2e85-4ee3-a660-1c3ababb2f83)
+![image](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/8edb57b7-fb99-4b00-8aee-05d82b6ee922)
+
 
 
 ## Created Forms
