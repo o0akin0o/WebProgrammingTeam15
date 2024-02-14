@@ -62,7 +62,7 @@ if (isset($_GET['action'])) {
                 } elseif (empty($_POST['address']) && !empty($_POST['qty'])) {
                     $error = "You did not input address";
                 } else {
-                    // Your order processing logic goes here
+                    
                 }
             }
             break;

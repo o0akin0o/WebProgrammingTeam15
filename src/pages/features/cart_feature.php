@@ -104,14 +104,27 @@ if (isset($_GET['action'])) {
                 $proId = $row['id'];
                 $proQty = $_POST['qty'][$row['id']];
                 $proPrice = $row['price'];
+                
               }
-
               // Insert order into Orders table
               $insertOrder = mysqli_query($conn, "INSERT INTO `Orders` (`id`, `name`, `phone`, `address`, `note`, `total`, `created_time`, `last_updated`, `customer_id`, `status`) VALUES (NULL, '$name', '$phone', '$address', '$note', '$total', NOW(), NOW() , '$customerId', 'Pending')");
               $orderId = $conn->insert_id;
-
-              // Insert order details into Order_Details table
-              $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
+              
+              foreach ($_POST['qty'] as $productId => $quantity) {
+                // Retrieve product details
+                $productResult = mysqli_query($conn, "SELECT * FROM `Products` WHERE `id` = '$productId'");
+                $productRow = mysqli_fetch_array($productResult);
+            
+                $proId = $productRow['id'];
+                $proQty = $quantity;
+                $proPrice = $productRow['price'];
+            
+                // Insert order details for this product
+                $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
+            }
+              // // Insert order details into Order_Details table
+              // $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
+              
 
               // Redirect to thank you page if order details inserted successfully
               if ($insertOrderDetails) {

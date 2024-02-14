@@ -1,6 +1,4 @@
 <div class="container">
-
-
             <div class="row mt-2">
                 <div class="col-sm-3 col-md-3">
                     <form action="" method="GET">
