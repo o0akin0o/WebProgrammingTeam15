@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+
 <body>
     <h1>Thank You!</h1>
     <p>Your order has been placed.</p>
@@ -18,5 +18,3 @@
     </form>
 
     
-</body>
-<?php include 'footer.php'; ?>

@@ -1,41 +1,53 @@
-
-
 footer {
-    background-color: #436944;
-    color: #fff; 
-    padding: 40px 0; 
-}
-
-.row {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between; 
-}
-
-.col-md-4 {
-    flex: 0 0 32%; 
-}
-
-.social-icons {
-    list-style: none; 
+    padding-left: 70px;
+    padding-top: 10px;
+    background-color: #4E7047;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight:400;
+  }
+  .social-icons {
+    list-style: none;
     padding: 0;
-}
-
-.social-icons li {
-    display: inline-block; 
-    margin-right: 10px; 
-}
-
-.social-icon img {
-    width: 30px; 
-    height: auto; 
-}
-
-p {
-    margin: 0; 
-}
-
-span {
-    display: block; 
-    margin-bottom: 10px; 
-}
+    margin: 15px;
+    float: left;
+    
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between icons */
+  }
+  .submit-booking{
+    margin: 20px 0 20px 40%;
+  }
+  
+  .booking-title{
+    margin-top: 20px;
+    color: light-grey;
+    font-size: 40px;
+  }
+  
+  .booking-img{
+    margin-top: 10%;
+  }
+  
+  .about-title{
+    padding-left: 20px;
+  }
+  
+  .about-text{
+    padding-left: 20px;
+  }
+  
+  .ctmenu{
+    border-bottom: 1px solid red;
+  }
+  .line-4 hr {
+    height: 2px;
+    border: 0;
+    background: #638889;
+    width: 730px;
+    position: absolute;
+      left: 25%;
+  }
