@@ -85,16 +85,16 @@ In this section, list and describe the features or functionality that you are wo
 
 #### Admin Page Feature
 
- - 🔗 GitHub:  [Admin](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
- - 🐚 Demo:    [Admin](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
+  - 🔗 GitHub:  [Admin](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+  - 🐚 Demo:    [Admin](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
 
 - **Update/Delete/Complete**:
- - 🔗 GitHub:  [Update & Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+  - 🔗 GitHub:  [Update & Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
   
 #### Report Page Feature
 
- - 🔗 GitHub: [Report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
- - 🐚 Demo:   [Report](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
+  - 🔗 GitHub: [Report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
+  - 🐚 Demo:   [Report](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
 
 ### Feature 5
 
@@ -110,13 +110,13 @@ In this section, list and describe the features or functionality that you are wo
 
 - **Create Account**:
 
-- 🔗 GitHub:[Create Account](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
-- 🐚 Demo:  [Create Account](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
+ - 🔗 GitHub:[Create Account](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+ - 🐚 Demo:  [Create Account](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php)
   
 - **Customer Profile**:
   
-- 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
-- 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
+ - 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
+ - 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
   
 ## 🔠 Database Tables
 
