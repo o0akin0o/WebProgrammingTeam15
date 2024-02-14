@@ -138,20 +138,34 @@ List the database tables that are part of your project.
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By Sonali Mitua): Form Name: Booking confirmation [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/Bookingconfirmation.php) | [shell.hamk.fi](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/Bookingconfirmation.php). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- 1️⃣ Form 1 (Created By Sonali Mitua):
+  - Form Name: Booking 
+    + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/Bookingconfirmation.php) 
+    + [Shell](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/Bookingconfirmation.php). 
+    + Validations Applied
+  
+- 2️⃣ Form 2: (Created By):
+  - Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
-- Form 3: (Created By Dan Le): Form Name: Checkout Page [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
- | [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php).  | Validations Applied
-     + The form lets users view and manage items in their shopping cart before placing an order. It consists of a table displaying the items in the cart, along with their prices, quantities, and total amounts. Additionally, users can update quantities or remove items from the cart. Below the cart table, there is an order review section displaying a summary of the selected items and the total cost. Finally, there is a section for entering customer details and placing the order.
-     + Purpose: The purpose of the form is to provide users with a convenient way to review and manage their orders before finalizing them. Users can adjust the quantities of items, remove unwanted items, and enter their contact and delivery information before placing the order.
-     + Validation: The user must log in before completing the order. All contact form fields are required. The cart must not be empty before completing orders.
+- 3️⃣ Form 3: (Created By Dan Le):
+  - Form Name: Contact Information
+    + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
+    + [Shell](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php).  
+    + Validations Applied
+    + The form lets users view and manage items in their shopping cart before placing an order. It consists of a table displaying the items in the cart, along with           their prices, quantities, and total amounts. Additionally, users can update quantities or remove items from the cart. Below the cart table, there is an order 
+      review section displaying a summary of the selected items and the total cost. Finally, there is a section for entering customer details and placing the order.
+    + Purpose: The purpose of the form is to provide users with a convenient way to review and manage their orders before finalizing them. Users can adjust the 
+      quantities of items, remove unwanted items, and enter their contact and delivery information before placing the order.
+    + Validation: The user must log in before completing the order. All contact form fields are required. The cart must not be empty before completing orders.
  
-- Form 4: (Created By Phuong Le):  Form Name: Update Order [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
-  |[shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
-    + The form allows admin to view, update orders, delete order
-    + Form(s) with JavaScript validation: User must fill information in required field: Name, total order, status, order's note
-    + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet the requirements."
+- 4️⃣ Form 4: (Created By Phuong Le):
+ - Form Name: Update Order
+   + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
+   + [Shell](http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
+   + The form allows the admin to view, update orders, delete order
+   + Form(s) with JavaScript validation: User must fill in information in the required field: Name, total order, status, order's note
+   + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet 
+     the requirements."
 
 
 ## 🗄️ Created Tables
