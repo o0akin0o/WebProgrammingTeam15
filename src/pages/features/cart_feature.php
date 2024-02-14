@@ -122,10 +122,7 @@ if (isset($_GET['action'])) {
                 // Insert order details for this product
                 $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
             }
-              // // Insert order details into Order_Details table
-              // $insertOrderDetails = mysqli_query($conn, "INSERT INTO `Order_Details` (`id`, `order_id`, `product_id`, `quantity`, `price`, `created_time`, `last_updated`) VALUES (NULL, '$orderId', '$proId', '$proQty', '$proPrice', NOW(), NOW())");
               
-
               // Redirect to thank you page if order details inserted successfully
               if ($insertOrderDetails) {
                 unset($_SESSION['cart']);
