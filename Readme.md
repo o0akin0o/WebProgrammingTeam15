@@ -29,14 +29,14 @@ In this section, list and describe the features or functionality that you are wo
 - [ ] Feature 5 (Quan Le): Menu Page
 - [ ] Feature 6 (Quan Le): Create Account, Customers Page
 
-### Feature 1
+### ▶️ Feature 1
 
 #### Booking Page Features
 - **Booking Page**: 
    - 🔗 GitHub:[Booking](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/bookingfood.php)
    - 🐚 Demo:  [Booking](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/bookingfood.php)
 
-### Feature 2
+### ▶️ Feature 2
 
 #### Menu Page Features
 
@@ -74,14 +74,14 @@ In this section, list and describe the features or functionality that you are wo
   - 🔗 GitHub: [Thank You](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/thankyou.php)
   - 🐚 Demo:   [Thank You](http://shell.hamk.fi/~bbcap23_15/src/pages/thankyou.php)
    
-### Feature 3
+### ▶️ Feature 3
 
 #### Log In/ Log Out Page Feature
 
   - 🔗 GitHub: [Login](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/login.php)
   - 🐚 Demo:   [Login](http://shell.hamk.fi/~bbcap23_15/src/pages/login.php)
 
-### Feature 4
+### ▶️ Feature 4
 
 #### Admin Page Feature
 
@@ -97,7 +97,7 @@ In this section, list and describe the features or functionality that you are wo
   - 🔗 GitHub: [Report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
   - 🐚 Demo:   [Report](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
 
-### Feature 5
+### ▶️ Feature 5
 
 #### Menu Page Features
 
@@ -109,7 +109,7 @@ In this section, list and describe the features or functionality that you are wo
   - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
   - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
 
-### Feature 6
+### ▶️ Feature 6
 
 #### Create Account Features
 
