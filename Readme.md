@@ -4,13 +4,13 @@
 
 Our website, Eastern Kitchen Restaurant, offers both online ordering and table reservations for customers.
 
-# DEMO 
+# 🎠 DEMO 
 ![DEMO](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHk2N2Y4YWFqMDZhcHkwbDEwZGo2bDY0amp3YWUzZm5qNmNpaWhreCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XsVRqNvcV1vzZpeAo8/giphy.gif)
 
-# 💻Tech Stack
+# 💻 Tech Stack
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)  ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 
-## Table of Contents :
+# 📖 Table of Contents :
 - [Features](#features)
 - [Database Tables](#database-tables)
 - [Created Forms](#created-forms)
@@ -18,7 +18,7 @@ Our website, Eastern Kitchen Restaurant, offers both online ordering and table r
 
 ---
 
-## Features
+## 📑 Features
 
 In this section, list and describe the features or functionality that you are working on. You can use checkboxes to track the progress of each feature.
 
@@ -96,7 +96,6 @@ In this section, list and describe the features or functionality that you are wo
  - 🔗 GitHub: [Report](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/report.php)
  - 🐚 Demo:   [Report](http://shell.hamk.fi/~bbcap23_15/src/pages/report.php)
 
-
 ### Feature 5
 
 - **Menu Page**:
@@ -119,7 +118,7 @@ In this section, list and describe the features or functionality that you are wo
 - 🔗 GitHub:[Customer Profile](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/customer.php)
 - 🐚 Demo:  [Customer Profile](http://shell.hamk.fi/~bbcap23_15/src/pages/customer.php)
   
-## Database Tables
+## 🔠 Database Tables
 
 List the database tables that are part of your project. 
 
@@ -132,14 +131,12 @@ List the database tables that are part of your project.
 ![image](https://github.com/o0akin0o/WebProgrammingTeam15/assets/7956848/8edb57b7-fb99-4b00-8aee-05d82b6ee922)
 
 
-
-## Created Forms
+## 💼 Created Forms
 
 List and describe any forms that have been created as part of your project. Include details about the purpose of each form and any validation logic.
 
 - Form 1 (Created By Sonali Mitua): Form Name: Booking confirmation [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/Bookingconfirmation.php) | [shell.hamk.fi](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/Bookingconfirmation.php). | Validations Applied
 - Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-
 
 - Form 3: (Created By Dan Le): Form Name: Checkout Page [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/cart.php)
  | [shell.hamk.fi](http://shell.hamk.fi/~bbcap23_15/src/pages/cart.php).  | Validations Applied
@@ -147,7 +144,6 @@ List and describe any forms that have been created as part of your project. Incl
      + Purpose: The purpose of the form is to provide users with a convenient way to review and manage their orders before finalizing them. Users can adjust the quantities of items, remove unwanted items, and enter their contact and delivery information before placing the order.
      + Validation: The user must log in before completing the order. All contact form fields are required. The cart must not be empty before completing orders.
  
-   
 - Form 4: (Created By Phuong Le):  Form Name: Update Order [github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
   |[shell.hamk.fi] (http://shell.hamk.fi/~bbcap23_15/src/pages/update.php)
     + The form allows admin to view, update orders, delete order
@@ -155,8 +151,7 @@ List and describe any forms that have been created as part of your project. Incl
     + JavaScript event handlers for HTML elements:  The name field must be filled in with specific requirements. Show a notification if the user input does not meet the requirements."
 
 
-
-## Created Tables
+## 🗄️ Created Tables
 
 List any tables that you have created in the project work
 
