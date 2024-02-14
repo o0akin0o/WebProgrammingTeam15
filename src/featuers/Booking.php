@@ -165,7 +165,7 @@
                                 <img class="socialicon" src="./image/Instagram.png" alt="Instagram Icon">
                             </a>
                         </li>
-                        <!-- Add more social icons as needed -->
+                       
                     </ul>
                 </div>
                 <div class="col-md-4">

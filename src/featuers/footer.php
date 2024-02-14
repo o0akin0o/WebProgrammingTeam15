@@ -31,17 +31,17 @@
                     <ul class="social-icons">
                         <li>
                             <a href="https://www.facebook.com/" target="_blank" title="Visit our Facebook page">
-                                <img class="socialicon" src="./images/fbicon.png" alt="Facebook Icon">
+                                <img class="socialicon" src="./image/facebook.png" alt="Facebook Icon">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/" target="_blank" title="Visit our youtube chanel">
-                                <img class="socialicon" src="./images/youtubeicon.png" alt="Youtube Icon">
+                                <img class="socialicon" src="./image/youtube.png" alt="Youtube Icon">
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/" target="_blank" title="Visit our instagram page">
-                                <img class="socialicon" src="./images/Instagram_icon.png" alt="Instagram Icon">
+                                <img class="socialicon" src="./image/Instagram.png" alt="Instagram Icon">
                             </a>
                         </li>
                         <!-- Add more social icons as needed -->
