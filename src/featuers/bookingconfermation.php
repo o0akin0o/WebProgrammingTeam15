@@ -2,13 +2,7 @@
 <body>
     <h1>Thank You!</h1>
     <p>Your order has been placed.</p>
-    <h2>Order Details</h2>
-    <p>Name: Aman Marina</p>
-    <p>Phone: +358 098 567 09</p>
-    <p>Date: 13th February, 2024</p>
-    <p>Time: 12.00 pm</p>
-    <p>Order Number: 01223</p>
-    <p>Email: amanmarina23@gmail.com</p>
+    
 
     <h2>Rate your experience</h2>
     <form action="process_feedback.php" method="post">
