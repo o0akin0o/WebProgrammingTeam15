@@ -147,7 +147,7 @@ List any tables that you have created in the project work
   + [Products Table](http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap23_15&table=Products)
     
 - Table 3 (Created By Dan Le):
-  + [Order Table](http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap23_15&table=Orders)
+  + [Orders Table](http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap23_15&table=Orders)
   + [Order_Details Table](http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_bbcap23_15&table=Order_Details)
     
 - Table 5 (Created By Phuong Le):
