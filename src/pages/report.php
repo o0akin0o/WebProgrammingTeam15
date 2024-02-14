@@ -1,5 +1,4 @@
-<?php include('top_header.php'); ?>
-<body>
+<?php include('top_header.php'); ?><body>
 
 <div class="container mx-auto my-4">
     <!-- NAV BAR -->
@@ -7,7 +6,7 @@
     <!-- END OF NAV BAR -->
 
     <div class="container">
-        <h1 class="my-4">Admin Page</h1>
+        <h1 class="my-4">Report Page</h1>
 
         <!-- Display order list table and buttons -->
         <div class="col-md-12">
@@ -56,7 +55,7 @@
                     
                         echo "</tbody></table>";
                         
-                        echo "<p>Total Revenue: $totalRevenue Euros</p>";
+                        echo "<p>Total Revenue: $totalRevenue € </p>";
                     } else {
                             // Display a message if no results are found
                             echo "No results";
@@ -110,9 +109,9 @@
                         $conn->close();
 
                     ?>
-			
-			<?php
-                    // Find total orders online: base on order ID
+
+                <?php
+                    // Find total order online: base on order ID
                     include 'db_connection.php';
                         // Fetch order list from the database and fill in the table
                         $sql ="SELECT Count(id) FROM Orders";
@@ -133,15 +132,30 @@
 
                     ?>
 
+
+
                     </tbody>
                     </table>
                     
             </div>
         </div>
+
+
+
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Admin Page</h4>
+                    <br>
+                        <p>  <p><a href="admin.php">To the Admin page</a></p></p>
+            
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
 <?php include ('footer.php'); ?>
 <?php include ('footer_script.php'); ?>
-</body>
-</html>
+
