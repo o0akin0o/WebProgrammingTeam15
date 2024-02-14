@@ -103,7 +103,7 @@ In this section, list and describe the features or functionality that you are wo
 
   - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
   - 🐚 Demo:   [Menu](http://shell.hamk.fi/~bbcap23_15/src/pages/menu.php)
-  - 
+    
 - **Load Products**:
   
   - 🔗 GitHub: [Menu](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/menu.php)
