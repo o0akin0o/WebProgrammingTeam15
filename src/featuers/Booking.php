@@ -24,7 +24,7 @@
 
                     <ul>
                         <li>
-                            <a class="nav-link" href="index.php">Home</a>
+                            <a class="nav-link" href="home.php">Home</a>
                         </li>
                         <li>
                             <a class="nav-link" href="menu.php">Menu</a>
