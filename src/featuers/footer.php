@@ -41,10 +41,10 @@
                         </li>
                         <li>
                             <a href="https://www.instagram.com/" target="_blank" title="Visit our instagram page">
-                                <img class="socialicon" src="./image/Instagram.png" alt="Instagram Icon">
+                                <img class="socialicon" src="./image/instagram.png" alt="Instagram Icon">
                             </a>
                         </li>
-                        <!-- Add more social icons as needed -->
+                        
                     </ul>
                 </div>
                 <div class="col-md-4">
