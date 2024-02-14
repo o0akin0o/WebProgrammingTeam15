@@ -34,7 +34,7 @@ In this section, list and describe the features or functionality that you are wo
 #### Booking Page Features
 - **Booking Page**: 
    - 🔗 GitHub:[Booking](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/bookingfeatuers.php)
-   - 🐚 Demo:  [Booking](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/bookingfood.php)
+   - 🐚 Demo:  [Booking](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/bookingfeatuers.php)
 
 ### ▶️ Feature 2
 
