@@ -33,13 +33,17 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 ?>
 
 <?php
+    // Check if the Cancel Order button is clicked
     if(isset($_POST['cancelorder'])) {
-        // update status Orders
-        $sqlCancel = "UPDATE Orders SET status = 'Cancel' WHERE customer_id = '$customersid' AND status = 'Pending'";
-        if ($conn->query($sqlCancel) === TRUE) {
-            echo "<p class='alert alert-success'>Order is Cancel.</p>";
+        // Get the id of the order to cancel
+        $orderIdToCancel = $_POST['orderIdToCancel'];
+        
+        // Update the status of the order to 'Cancel'
+        $sqlCancelOrder = "UPDATE Orders SET status = 'Cancel' WHERE id = '$orderIdToCancel'";
+        if ($conn->query($sqlCancelOrder) === TRUE) {
+            echo "<p class='alert alert-success'>Order is cancelled.</p>";
         } else {
-            echo "<p class='alert alert-danger'>Error while Cancel Order " . $conn->error . "</p>";
+            echo "<p class='alert alert-danger'>Error while cancelling order: " . $conn->error . "</p>";
         }
     }
 ?>
@@ -78,54 +82,61 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
                         </div>
                         
                         <?php
+                            // Select orders for the current customer with status 'Pending'
                             $sql2 = "SELECT id FROM Orders WHERE customer_id='$customersid' AND status='Pending'";
                             $result = $conn->query($sql2);
-                            // check order
-                            if ($result->num_rows > 0) {
-                        ?>
-                            <div class="card text-center shadow p-3 mb-5 bg-white rounded" style="width: 30rem; height: auto;">
-                                <div class="card-body">
-                                    <h5 class="card-title">Current Order</h5>
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col" class="col-sm-6 col-md-5 col-sm-5">Name</th>
-                                                <th scope="col" class="col-sm-3 col-md-3">Quantity</th>
-                                                <th scope="col" class="col-sm-3 col-md-3 col-sm-3">Price</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php
-                                                while ($row = $result->fetch_assoc()) {
-                                                    $idorder = $row["id"];
-                                                    $sql3 = "SELECT p.name, o.quantity, o.price FROM Products p INNER JOIN Order_Details o ON p.id=o.product_id WHERE o.order_id='$idorder'";
-                                                    $result3 = $conn->query($sql3);
-                                                    // check result3
-                                                    if ($result3->num_rows > 0) {
-                                                        // show $result3
-                                                        while ($row3 = $result3->fetch_assoc()) {
-                                            ?>
-                                                            <tr>
-                                                                <td><?php echo $row3['name']; ?></td>
-                                                                <td><?php echo $row3['quantity']; ?></td>
-                                                                <td><?php echo $row3['price']; ?></td>
-                                                            </tr>
-                                            <?php
-                                                        }
-                                                    }
-                                                }
-                                            ?>
-                                        </tbody>
-                                    </table>
-                                    <form method="post">
-                                        <button type="submit" class="btn btn-primary" name="cancelorder">Cancel</button>
-                                    </form>
-                                </div>
-                            </div>
-                        <?php
-                            }
-                        ?>
 
+                            // Check if there are any pending orders
+                            if ($result->num_rows > 0) {
+                                // Loop through each pending order
+                                while ($row = $result->fetch_assoc()) {
+                                    $idorder = $row["id"];
+                                    $sql3 = "SELECT p.name, o.quantity, o.price FROM Products p INNER JOIN Order_Details o ON p.id=o.product_id WHERE o.order_id='$idorder'";
+                                    $result3 = $conn->query($sql3);
+
+                                    // Check if there are any products in the order
+                                    if ($result3->num_rows > 0) {
+                            ?>
+                                        <!-- Card for each order -->
+                                        <div class="card text-center shadow p-3 mb-5 bg-white rounded" style="width: 30rem; height: auto;">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Current Order</h5>
+                                                <table class="table">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th scope="col" class="col-sm-6 col-md-5 col-sm-5">Name</th>
+                                                            <th scope="col" class="col-sm-3 col-md-3">Quantity</th>
+                                                            <th scope="col" class="col-sm-3 col-md-3 col-sm-3">Price</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php
+                                                            // Loop through each product in the order
+                                                            while ($row3 = $result3->fetch_assoc()) {
+                                                        ?>
+                                                                <tr>
+                                                                    <td><?php echo $row3['name']; ?></td>
+                                                                    <td><?php echo $row3['quantity']; ?></td>
+                                                                    <td><?php echo $row3['price']; ?></td>
+                                                                </tr>
+                                                        <?php
+                                                            }
+                                                        ?>
+                                                    </tbody>
+                                                </table>
+                                                <!-- Form to cancel order -->
+                                                <form method="post">
+                                                    <!-- Hidden field to store the id of the order to cancel -->
+                                                    <input type="hidden" name="orderIdToCancel" value="<?php echo $idorder; ?>">
+                                                    <button type="submit" class="btn btn-primary" name="cancelorder">Cancel</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                            <?php
+                                    }
+                                }
+                            }
+                            ?>
 
                     <?php
                         if ($isbooking) {
