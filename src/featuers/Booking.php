@@ -92,24 +92,28 @@
         <form name="form1" method="post" action="../process.php">
                 <fieldset>
                   <div class="form-group">
-                    <label for="" class="p-2">Name</label>
-                    <input type="text" id="" class="form-control" placeholder="Name">
+                    <label for="" class="p-2">customer_id</label>
+                    <input type="text" id="" class="form-control" placeholder="customer_id">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">Phone</label>
-                    <input type="text" id="" class="form-control" placeholder="Phone">
+                    <label for="" class="p-2">customer_name</label>
+                    <input type="text" id="" class="form-control" placeholder="customer_name">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">Numbers of people</label>
-                    <input type="text" id="" class="form-control" placeholder="1">
+                    <label for="" class="p-2">phone</label>
+                    <input type="text" id="" class="form-control" placeholder="phone">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">Date</label>
+                    <label for="" class="p-2">_booking_date</label>
                     <input type="date" id="" class="form-control" placeholder="22/1/2023">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">Time</label>
+                    <label for="" class="p-2">booking_time</label>
                     <input type="time" id="" class="form-control" placeholder="10:00">
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="p-2">status</label>
+                    <input type="text" id="" class="form-control" placeholder="status">
                   </div>
                  
                 <div class="submit-booking">
