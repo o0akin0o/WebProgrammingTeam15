@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     } else {
         // SHOWS ERROR IF FAIL TO LOG IN
-        echo "<p class='alert alert-danger'>Bạn đã nhập sai password hoặc chưa có tài khoản </p>";
+        echo "<p class='alert alert-danger'>Wrong password or don't have account </p>";
     }
 }
 ?>
