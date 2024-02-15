@@ -92,27 +92,27 @@
         <form name="form1" method="post" action="../process.php">
                 <fieldset>
                   <div class="form-group">
-                    <label for="" class="p-2">customer_id</label>
-                    <input type="text" id="" class="form-control" placeholder="customer_id">
+                    <label for="" class="p-2">Customer_id</label>
+                    <input type="text" id="" class="form-control" placeholder="id">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">customer_name</label>
-                    <input type="text" id="" class="form-control" placeholder="customer_name">
+                    <label for="" class="p-2">Customer_name</label>
+                    <input type="text" id="" class="form-control" placeholder="name">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">phone</label>
+                    <label for="" class="p-2">Phone</label>
                     <input type="text" id="" class="form-control" placeholder="phone">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">_booking_date</label>
+                    <label for="" class="p-2">Booking_date</label>
                     <input type="date" id="" class="form-control" placeholder="22/1/2023">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">booking_time</label>
+                    <label for="" class="p-2">Booking_time</label>
                     <input type="time" id="" class="form-control" placeholder="10:00">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">status</label>
+                    <label for="" class="p-2">Status</label>
                     <input type="text" id="" class="form-control" placeholder="status">
                   </div>
                  
