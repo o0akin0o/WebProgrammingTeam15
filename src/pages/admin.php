@@ -20,6 +20,8 @@
                         <?php
                         include 'db_connection.php';
 
+                        
+
                         // Fetch order list from the database and fill in the table
                         $sql = "SELECT * FROM Orders";
                         $result = $conn->query($sql);
@@ -63,7 +65,7 @@
                         }
 
 
-                         // Check if the DeleteOrder button was clicked and if an order ID was provided
+			// Check if the DeleteOrder button was clicked and if an order ID was provided
                         if (isset($_POST['DeleteOrder']) && isset($_POST['order_id'])) {
                             $order_id = $_POST['order_id'];
 
@@ -77,7 +79,6 @@
                                 echo "Error deleting record: " . mysqli_error($conn);
                             }
                         }
-
 
                         $conn->close();
                         ?>
