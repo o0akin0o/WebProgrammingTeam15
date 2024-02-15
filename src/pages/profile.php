@@ -19,7 +19,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
     $email= $row["email"];
     $phone= $row["phone"];
     $address= $row["address"];
-    $sql1= "SELECT * FROM Booking where customer_id='$customersid' and status='Pending'";
+    $sql1= "SELECT * FROM `Booking` where customer_id='$customersid' and status='Pending'";
     $result = $conn->query($sql1);
     $row = $result->fetch_assoc();
     if ($result->num_rows > 0) {
@@ -50,7 +50,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 <?php
     if(isset($_POST['cancelbooking'])) {
         // update status booking
-        $sqlCancel = "UPDATE Booking SET status = 'cancel' WHERE customer_id = '$customersid'";
+        $sqlCancel = "UPDATE `Booking` SET status = 'cancel' WHERE customer_id = '$customersid'";
         if ($conn->query($sqlCancel) === TRUE) {
             echo "<p class='alert alert-success'>Booking is Cancel.</p>";
         } else {
