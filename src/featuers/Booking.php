@@ -13,7 +13,7 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>        <title>Restaurant</title>
             <form action="bookingfeatuers.php" method="post">
-
+            
         </head>
     <body>
 
@@ -89,7 +89,7 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-4">
-            <form>
+        <form name="form1" method="post" action="../process.php">
                 <fieldset>
                   <div class="form-group">
                     <label for="" class="p-2">Name</label>
