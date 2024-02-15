@@ -14,14 +14,89 @@ body {
   /* backdrop-filter: blur(5px); */
  
 }
+
 .card{
   cursor: pointer;
+}
+
+.card {
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.banner{
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.bn-content{
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+
+}
+.bn-content:hover{
+  transform: translateY(-10px);
+
+}
+
+.imgmenu {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Optional: starts slightly below and moves up */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.banner:hover {
+  transform: translateY(-10px);
 }
 
 .container{
   width: 1400px;
   margin: auto;
+  
 }
+
+.btn-primary {
+  background-color: #4E7047;
+  color: white;
+  border: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(2px); }
+}
+
+.fa-solid:hover {
+  animation: shake 0.5s ease-in-out infinite; /* Apply the shake animation */
+}
+
+#login:hover {
+  animation: shake 0.5s ease-in-out infinite; 
+}
+
 nav{
     background-color: #4E7047;
     font-family: 'Montserrat', sans-serif;
@@ -29,6 +104,14 @@ nav{
     color: white;
     
 }
+.navbar .nav-link {
+  transition: color 0.3s; /* Add transition for color change */
+}
+
+.navbar .nav-link:hover {
+  color: #6F9E6D; /* Change color to red on hover */
+}
+
 
 h2 {
   font-family: 'butter pineapple', sans-serif;
@@ -47,8 +130,24 @@ li {
 }
 .logo{
   font-size: 50px;
-  
 }
+.logo {
+  opacity: 0;
+  animation: logoBreathing 4s infinite;
+}
+
+@keyframes logoBreathing {
+  0%, 100% {
+    opacity: 1;
+    transform: translateX(0) scale(1); /* Start and end with original size */
+  }
+  50% {
+    transform: translateX(20px) scale(1.1); /* Slightly expand */
+  }
+}
+
+
+
 
 img {
   width: 500px;
@@ -108,6 +207,10 @@ form{
   display: flex;
   justify-content: center;
 }
+
+
+
+
 .card-img-top {
   width: 100%;
   height: 30vh;

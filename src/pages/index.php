@@ -3,12 +3,16 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
 ?>
 <?php include('top_header.php'); ?>
     <body>
+    
         <div class="container mx-auto my-4">
+      
             <!-- NAV BAR -->
             <?php include ('header.php'); ?>
             <?php include ('second_nav.php'); ?>
             <!-- END OF NAV BAR -->
             <div class="container">
+          
+            
                 <div class="row my-4 mt-4">
                     <h1 class="heading">A genuine fine-dining experience awaits</h1>
                 </div>
@@ -162,7 +166,10 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
               </div><!-- END OF BANNER 2-->
             </div> <!-- END OF CONTAINER -->
             <?php include ('footer.php'); ?>
+           
         </div><!-- END OF CONTAINER -->
+       
         <?php include ('footer_script.php'); ?>
+     
     </body>
 </html>
