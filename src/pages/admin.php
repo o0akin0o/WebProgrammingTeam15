@@ -20,21 +20,6 @@
                         <?php
                         include 'db_connection.php';
 
-                        // Check if the DeleteOrder button was clicked and if an order ID was provided
-                        if (isset($_POST['DeleteOrder']) && isset($_POST['order_id'])) {
-                            $order_id = $_POST['order_id'];
-
-                            // Construct the deletion query
-                            $query = "DELETE FROM Orders WHERE id='$order_id'";
-
-                            // Execute the deletion query
-                            if (mysqli_query($conn, $query)) {
-                                echo "Record Deleted with ID: $order_id <br>";
-                            } else {
-                                echo "Error deleting record: " . mysqli_error($conn);
-                            }
-                        }
-
                         // Fetch order list from the database and fill in the table
                         $sql = "SELECT * FROM Orders";
                         $result = $conn->query($sql);
@@ -76,6 +61,23 @@
                         } else {
                             echo "No results";
                         }
+
+
+                         // Check if the DeleteOrder button was clicked and if an order ID was provided
+                        if (isset($_POST['DeleteOrder']) && isset($_POST['order_id'])) {
+                            $order_id = $_POST['order_id'];
+
+                            // Construct the deletion query
+                            $query = "DELETE FROM Orders WHERE id='$order_id'";
+
+                            // Execute the deletion query
+                            if (mysqli_query($conn, $query)) {
+                                echo "Record Deleted with ID: $order_id <br>";
+                            } else {
+                                echo "Error deleting record: " . mysqli_error($conn);
+                            }
+                        }
+
 
                         $conn->close();
                         ?>
