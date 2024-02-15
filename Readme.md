@@ -143,6 +143,11 @@ List and describe any forms that have been created as part of your project. Incl
     + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/sonali/src/featuers/Booking.php) 
     + [Shell](http://shell.hamk.fi/~sonali23000/web-dev-env-main/src/sm_tasks/WebProgrammingTeam15/src/featuers/Booking.php). 
     + Validations Applied
+    + Navigation Bar: A menu at the top lets users quickly switch between Home, Menu, Booking, and About pages.
+
+ + Booking Form: Users enter basic info like their name, phone number, and preferred date and time to reserve a table. They submit the form to confirm their booking.
+
+ + Footer: At the bottom, there are icons to follow the restaurant on social media, info about opening hours, and the restaurant's address and contact details.
   
 - 2️⃣ Form 2: (Created By):
   - Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
