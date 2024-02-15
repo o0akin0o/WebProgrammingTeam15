@@ -2,7 +2,7 @@
 
 <div class="container mx-auto my-4">
     <!-- NAV BAR -->
-    <?php include ('header.php'); ?>
+    <?php include ('admin_header.php'); ?>
     <!-- END OF NAV BAR -->
 
     <div class="container">
