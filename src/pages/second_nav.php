@@ -7,7 +7,7 @@
             <div class="col-md-6">
                 <div>
                     <a id="cart" class="link-success" href="cart.php">
-                        <i class="fa-solid fa-cart-shopping">My Cart </i>
+                        <i class="fa-solid fa-cart-shopping icon-hover">My Cart </i>
                     </a>
                 </div>
             </div>

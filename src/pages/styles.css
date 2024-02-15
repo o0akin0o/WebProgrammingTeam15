@@ -88,12 +88,7 @@ body {
   75% { transform: translateX(-2px); }
   100% { transform: translateX(2px); }
 }
-
-.fa-solid:hover {
-  animation: shake 0.5s ease-in-out infinite; /* Apply the shake animation */
-}
-
-#login:hover {
+.icon-hover:hover {
   animation: shake 0.5s ease-in-out infinite; 
 }
 
