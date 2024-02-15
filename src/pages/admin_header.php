@@ -4,7 +4,7 @@
 
                     <ul>
                     <li>
-                            <a class="nav-link" href="home.php">Home</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         <li>
                             <a class="nav-link" href="admin.php">Admin</a>

@@ -2,7 +2,7 @@
 $servername = "db";
 $username = "root";
 $password = "password";
-$dbname = "eastern_kitchen";
+$dbname = "wp_bbcap23_15";
 
 // Create a database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
