@@ -88,9 +88,10 @@ In this section, list and describe the features or functionality that you are wo
   - 🔗 GitHub:  [Admin](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
   - 🐚 Demo:    [Admin](http://shell.hamk.fi/~bbcap23_15/src/pages/admin.php)
 
-- **Update/Delete/Complete**:
+- **Update/Delete**:
 
-  - 🔗 GitHub:  [Update & Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+  - 🔗 GitHub:  [Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
+  -             [Update](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
   
 #### Report Page Feature
 
