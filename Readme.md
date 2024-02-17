@@ -90,8 +90,8 @@ In this section, list and describe the features or functionality that you are wo
 
 - **Update/Delete**:
 
-  - 🔗 GitHub:  [Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)
-  -             [Update](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)
+  - 🔗 GitHub:  [Delete](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/admin.php)  [Update](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/update.php)         
+         
   
 #### Report Page Feature
 
