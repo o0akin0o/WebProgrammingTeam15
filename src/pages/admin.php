@@ -1,9 +1,18 @@
+<?php
+    // check login or not
+    if (!isset($_COOKIE['Admin'])){
+        // if not redirect to index.php
+        header("Location: index.php");
+        exit; 
+    }
+?>
 <?php include('top_header.php'); ?><body>
 
 <div class="container mx-auto my-4">
     <!-- NAV BAR -->
 
    <?php include ('admin_header.php'); ?>
+   <?php include ('second_nav.php'); ?>
     <!-- END OF NAV BAR -->
 
     <div class="container">
