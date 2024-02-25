@@ -104,9 +104,34 @@
                     <input type="text" id="" class="form-control" placeholder="phone">
                   </div>
                   <div class="form-group">
-                    <label for="" class="p-2">Booking_date</label>
-                    <input type="date" id="" class="form-control" placeholder="22/1/2023">
-                  </div>
+    <label for="booking_date" class="p-2">Booking Date</label>
+    <input type="date" id="booking_date" class="form-control" placeholder="22/1/2023" onchange="validateBookingDate()">
+    <small id="booking_date_error" class="text-danger"></small>
+</div>
+<div>
+<script>
+    function validateBookingDate() {
+        var bookingDateInput = document.getElementById('booking_date');
+        var bookingDate = bookingDateInput.value;
+
+        // Convert the input value to a Date object
+        var dateObj = new Date(bookingDate);
+
+        // Get today's date for comparison
+        var today = new Date();
+
+        // Check if the input is a valid future date
+        if (dateObj < today) {
+            document.getElementById('booking_date_error').innerText = "Please select a future date.";
+            bookingDateInput.setCustomValidity("Invalid");
+        } else {
+            document.getElementById('booking_date_error').innerText = "";
+            bookingDateInput.setCustomValidity(""); // Reset the validation
+        }
+    }
+</script>
+</div>
+
                   <div class="form-group">
                     <label for="" class="p-2">Booking_time</label>
                     <input type="time" id="" class="form-control" placeholder="10:00">
