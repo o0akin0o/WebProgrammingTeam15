@@ -157,7 +157,7 @@ List and describe any forms that have been created as part of your project. Incl
     + Validations Applied
     + The form lets users create new accounts on this website.
     + Purpose: The purpose of the "Create Account" form is to enable new users to register for an account on our website. By filling out this form, users can create a personalized account that allows them to access additional features, book, and participate in interactive activities on the site.
-    + Validation: All form fields are required. Check phone the number, check email validate, password of more than 6 characters.
+    + Validation: All form fields are required. Check phone the number, check email validate, and password of more than 6 characters.
 
 - 3️⃣ Form 3: (Created By Dan Le):
   - Form Name: Contact Information
