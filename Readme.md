@@ -150,8 +150,14 @@ List and describe any forms that have been created as part of your project. Incl
 
  + Footer: At the bottom, there are icons to follow the restaurant on social media, info about opening hours, and the restaurant's address and contact details.
   
-- 2️⃣ Form 2: (Created By):
-  - Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- 2️⃣ Form 2: (Created By Quan Le):
+  - Form Name: Create Account
+    + [Github](https://github.com/o0akin0o/WebProgrammingTeam15/blob/main/src/pages/create_account.php)
+    + [Shell](http://shell.hamk.fi/~bbcap23_15/src/pages/create_account.php).  
+    + Validations Applied
+    + The form lets users create new accounts on this website.
+    + Purpose: The purpose of the "Create Account" form is to enable new users to register for an account on our website. By filling out this form, users can create a personalized account that allows them to access additional features, book, and participate in interactive activities on the site.
+    + Validation: All form fields are required. Check phone the number, check email validate, password of more than 6 characters.
 
 - 3️⃣ Form 3: (Created By Dan Le):
   - Form Name: Contact Information
