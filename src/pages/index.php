@@ -14,7 +14,7 @@ setcookie("prev_page", $prevPage, time() + 3600, "/");
           
             
                 <div class="row my-4 mt-4">
-                    <h1 class="heading">A genuine fine-dining experience awaits</h1>
+                    <h1 class="heading">An genuine fine-dining experience awaits</h1>
                 </div>
                 <!-- CARD ROW 1 -->
                 <div class="row my-4 mt-4">
